@@ -11,4 +11,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: action
+        uses: actions/checkout@v2
+      - name: Login to container regist
