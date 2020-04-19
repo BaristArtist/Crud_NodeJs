@@ -16,4 +16,5 @@ jobs:
         run: echo ${{ secrets.GITHUB_TOKEN }} | docker login ghcr.io -u USERNAME --password-stdin
       - name: Pull container images
         run: docker-compose pull || true
-      - name: Build and start contai
+      - name: Build and start containers
+        run: docker-compose up -d --bu
