@@ -17,4 +17,6 @@ jobs:
       - name: Pull container images
         run: docker-compose pull || true
       - name: Build and start containers
-        run: docker-compose up -d --bu
+        run: docker-compose up -d --build
+      - name: Push container images
+  
