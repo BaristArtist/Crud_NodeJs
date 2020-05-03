@@ -20,4 +20,5 @@ jobs:
         run: docker-compose up -d --build
       - name: Push container images
         run: |
-          docker-compos
+          docker-compose push php && \
+          docker-compose p
