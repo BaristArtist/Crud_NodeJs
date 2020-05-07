@@ -21,4 +21,5 @@ jobs:
       - name: Push container images
         run: |
           docker-compose push php && \
-          docker-compose p
+          docker-compose push nginx && \
+          docker-compose push nod
