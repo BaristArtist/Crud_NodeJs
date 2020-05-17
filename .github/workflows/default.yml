@@ -26,4 +26,4 @@ jobs:
           docker-compose push chrome
       - name: Install stylelint
         run: |
-   
+          docker-compose exec -T nodejs yar
