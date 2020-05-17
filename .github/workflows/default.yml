@@ -24,4 +24,6 @@ jobs:
           docker-compose push nginx && \
           docker-compose push nodejs && \
           docker-compose push chrome
-    
+      - name: Install stylelint
+        run: |
+   
