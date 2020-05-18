@@ -26,4 +26,5 @@ jobs:
           docker-compose push chrome
       - name: Install stylelint
         run: |
-          docker-compose exec -T nodejs yarn add stylelint stylelint-config-standard
+          docker-compose exec -T nodejs yarn add stylelint stylelint-config-standard && \
+          docker-compose exec -T nodejs sh -c 
