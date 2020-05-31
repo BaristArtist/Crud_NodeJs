@@ -29,4 +29,4 @@ jobs:
           docker-compose exec -T nodejs yarn add stylelint stylelint-config-standard && \
           docker-compose exec -T nodejs sh -c "echo '{\"extends\": \"stylelint-config-standard\"}' > .stylelintrc.json"
       - name: Lint CSS
-        run: docker-compose exec -T nodejs yarn stylelint vend
+        run: docker-compose exec -T nodejs yarn stylelint vendor/nedac/sylius-temporarily-out-of-stock-plugin/sr
