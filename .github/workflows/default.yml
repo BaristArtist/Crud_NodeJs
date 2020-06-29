@@ -37,4 +37,4 @@ jobs:
       - name: Code duplication
         run: docker-compose exec -T php ./tools/phpcpd vendor/nedac/sylius-temporarily-out-of-stock-plugin/src/ --fuzzy
       - name: Code style
-        run: docker-comp
+        run: docker-compose exec -T php sh -c "(cd vendor/nedac/sylius-
