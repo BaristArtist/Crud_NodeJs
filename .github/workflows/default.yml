@@ -40,4 +40,5 @@ jobs:
         run: docker-compose exec -T php sh -c "(cd vendor/nedac/sylius-temporarily-out-of-stock-plugin && vendor/bin/phpcs)"
       - name: Static analysis
         run: docker-compose exec -T php sh -c "(cd vendor/nedac/sylius-temporarily-out-of-stock-plugin && vendor/bin/phpstan analyse src/ tests/ --level max)"
-      -
+      - name: Unit tests
+        run: docker-compose exec
