@@ -43,4 +43,6 @@ jobs:
       - name: Unit tests
         run: docker-compose exec -T php sh -c "(cd vendor/nedac/sylius-temporarily-out-of-stock-plugin && vendor/bin/phpunit --testdox)"
       - name: Install twigcs
-        run: docker-compose exec -T php composer global require friendsoft
+        run: docker-compose exec -T php composer global require friendsoftwig/twigcs
+      - name: Template style
+       
