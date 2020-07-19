@@ -45,4 +45,4 @@ jobs:
       - name: Install twigcs
         run: docker-compose exec -T php composer global require friendsoftwig/twigcs
       - name: Template style
-       
+        run: docker-compose exec -T php twigcs ven
