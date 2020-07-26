@@ -46,4 +46,5 @@ jobs:
         run: docker-compose exec -T php composer global require friendsoftwig/twigcs
       - name: Template style
         run: docker-compose exec -T php twigcs vendor/nedac/sylius-temporarily-out-of-stock-plugin/src/Resources/views --severity error
-  
+      - name: Create database schema
+        
