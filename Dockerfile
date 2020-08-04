@@ -76,3 +76,48 @@ COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
 
 RUN set -eux; \
     wget -O phive.phar https://phar.io/releases/phive.phar; \
+    wget -O phive.phar.asc https://phar.io/releases/phive.phar.asc; \
+    gpg --keyserver hkps://keys.openpgp.org --recv-keys 0x9D8A98B29B2D5D79; \
+    gpg --verify phive.phar.asc phive.phar; \
+    chmod +x phive.phar; \
+    mv phive.phar /usr/local/bin/phive
+
+COPY docker/php.ini /usr/local/etc/php/php.ini
+COPY docker/www.conf /usr/local/etc/php-fpm.d/www.conf
+
+# https://getcomposer.org/doc/03-cli.md#composer-allow-superuser
+ENV COMPOSER_ALLOW_SUPERUSER=1
+ENV PATH="${PATH}:/root/.composer/vendor/bin"
+
+COPY docker/php-entrypoint.sh /usr/local/bin/docker-entrypoint
+RUN chmod +x /usr/local/bin/docker-entrypoint
+
+WORKDIR /srv
+ARG SYLIUS_VERSION=1.10
+
+# TODO: Install using composer
+RUN git clone --depth 1 --single-branch --branch "$SYLIUS_VERSION" https://github.com/Sylius/Sylius-Standard.git sylius
+
+WORKDIR /srv/sylius
+
+RUN set -eux; \
+    pip install yq; \
+    yq -y -i '.imports[.imports|length] |= . + {"resource": "../vendor/nedac/sylius-temporarily-out-of-stock-plugin/src/Resources/config/services_test.xml"}' config/services_test.yaml; \
+    yq -y -i '.imports[.imports|length] |= . + "vendor/nedac/sylius-temporarily-out-of-stock-plugin/tests/Behat/Resources/suites.yml"' behat.yml.dist; \
+    yq -y -i '.default.extensions."Behat\\MinkExtension".base_url = "http://localhost/"' behat.yml.dist; \
+    yq -y -i '.default.extensions."FriendsOfBehat\\SuiteSettingsExtension".paths = ["vendor/nedac/sylius-temporarily-out-of-stock-plugin/features"]' behat.yml.dist
+
+ARG PRIVATE_FLEX="false"
+RUN set -eux; \
+    if [ ! -z "$PRIVATE_FLEX" ] && [ "$PRIVATE_FLEX" != "false" ]; then \
+        cat composer.json | jq --indent 4 '. * {"extra":{"symfony":{"endpoint":"http://localhost:8080"}}}' > composer.json.tmp; \
+        mv composer.json.tmp composer.json; \
+        cat composer.json | jq --indent 4 '. * {"config":{"secure-http":false}}' > composer.json.tmp; \
+        mv composer.json.tmp composer.json; \
+        cat composer.json; \
+    fi
+
+ARG PLUGIN_VERSION=1.1.x-dev
+RUN set -eux; \
+    composer config extra.symfony.allow-contrib true; \
+    composer install --prefer-dist --no-autoloader --no-scripts --no-progress; \
