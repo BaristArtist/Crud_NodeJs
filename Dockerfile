@@ -121,3 +121,37 @@ ARG PLUGIN_VERSION=1.1.x-dev
 RUN set -eux; \
     composer config extra.symfony.allow-contrib true; \
     composer install --prefer-dist --no-autoloader --no-scripts --no-progress; \
+    composer require nedac/sylius-temporarily-out-of-stock-plugin:"$PLUGIN_VERSION" --no-progress -vvv; \
+    composer recipes:install nedac/sylius-temporarily-out-of-stock-plugin --force -n; \
+    composer clear-cache; \
+    ls -l config/
+
+RUN yq -y -i '.sylius_product.resources.product.classes["repository"] |= . + "Nedac\\SyliusTemporarilyOutOfStockPlugin\\Repository\\ProductRepository"' config/packages/_sylius.yaml
+
+VOLUME /srv/sylius/var
+
+VOLUME /srv/sylius/public/media
+
+ENTRYPOINT ["docker-entrypoint"]
+CMD ["php-fpm"]
+
+##################################################
+#                     NODEJS                     #
+##################################################
+FROM node:${NODE_VERSION}-alpine AS sylius_temporarily_out_of_stock_plugin_nodejs
+
+WORKDIR /srv/sylius
+
+RUN set -eux; \
+        apk add --no-cache --virtual .build-deps \
+                g++ \
+                gcc \
+                git \
+                make \
+                python2 \
+        ;
+
+COPY --from=sylius_temporarily_out_of_stock_plugin_php /srv/sylius/package.json ./package.json
+COPY --from=sylius_temporarily_out_of_stock_plugin_php /srv/sylius/gulpfile.babel.js ./gulpfile.babel.js
+COPY --from=sylius_temporarily_out_of_stock_plugin_php /srv/sylius/.babelrc ./.babelrc
+COPY --from=sylius_temporarily_out_of_stock_plugin_php /srv/sylius/.eslintrc.js ./.eslintrc.js
