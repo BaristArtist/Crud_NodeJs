@@ -155,3 +155,53 @@ COPY --from=sylius_temporarily_out_of_stock_plugin_php /srv/sylius/package.json 
 COPY --from=sylius_temporarily_out_of_stock_plugin_php /srv/sylius/gulpfile.babel.js ./gulpfile.babel.js
 COPY --from=sylius_temporarily_out_of_stock_plugin_php /srv/sylius/.babelrc ./.babelrc
 COPY --from=sylius_temporarily_out_of_stock_plugin_php /srv/sylius/.eslintrc.js ./.eslintrc.js
+COPY --from=sylius_temporarily_out_of_stock_plugin_php /srv/sylius/vendor/sylius/sylius/src/Sylius/Bundle/AdminBundle/gulpfile.babel.js ./vendor/sylius/sylius/src/Sylius/Bundle/AdminBundle/gulpfile.babel.js
+COPY --from=sylius_temporarily_out_of_stock_plugin_php /srv/sylius/vendor/sylius/sylius/src/Sylius/Bundle/AdminBundle/Resources/private vendor/sylius/sylius/src/Sylius/Bundle/AdminBundle/Resources/private/
+COPY --from=sylius_temporarily_out_of_stock_plugin_php /srv/sylius/vendor/sylius/sylius/src/Sylius/Bundle/ShopBundle/gulpfile.babel.js ./vendor/sylius/sylius/src/Sylius/Bundle/ShopBundle/gulpfile.babel.js
+COPY --from=sylius_temporarily_out_of_stock_plugin_php /srv/sylius/vendor/sylius/sylius/src/Sylius/Bundle/ShopBundle/Resources/private vendor/sylius/sylius/src/Sylius/Bundle/ShopBundle/Resources/private/
+COPY --from=sylius_temporarily_out_of_stock_plugin_php /srv/sylius/vendor/sylius/sylius/src/Sylius/Bundle/UiBundle/Resources/private vendor/sylius/sylius/src/Sylius/Bundle/UiBundle/Resources/private/
+COPY --from=sylius_temporarily_out_of_stock_plugin_php /srv/sylius/vendor/nedac/sylius-temporarily-out-of-stock-plugin/src/Resources/public vendor/nedac/sylius-temporarily-out-of-stock-plugin/src/Resources/public/
+
+RUN sed -i 's/node: true,/node: true,\n    browser: true/g' .eslintrc.js
+
+RUN set -eux; \
+    yarn install; \
+    yarn cache clean
+
+RUN yarn build
+
+COPY docker/nodejs-entrypoint.sh /usr/local/bin/docker-entrypoint
+RUN chmod +x /usr/local/bin/docker-entrypoint
+
+ENTRYPOINT ["docker-entrypoint"]
+CMD ["yarn", "watch"]
+
+##################################################
+#                     NGINX                      #
+##################################################
+FROM nginx:${NGINX_VERSION}-alpine AS sylius_temporarily_out_of_stock_plugin_nginx
+
+RUN apk add --no-cache bash
+
+COPY docker/default.conf /etc/nginx/conf.d/default.conf
+
+WORKDIR /srv/sylius
+
+COPY --from=sylius_temporarily_out_of_stock_plugin_php /srv/sylius/public public/
+COPY --from=sylius_temporarily_out_of_stock_plugin_nodejs /srv/sylius/public public/
+
+COPY docker/wait-for-it.sh /
+RUN chmod +x /wait-for-it.sh
+
+CMD /wait-for-it.sh -t 0 127.0.0.1:9000 -- nginx -g "daemon off;"
+
+##################################################
+#                     CHROME                     #
+##################################################
+FROM ubuntu:focal AS sylius_temporarily_out_of_stock_plugin_chrome
+
+ARG DEBIAN_FRONTEND=noninteractive
+
+RUN set -eux; \
+    apt update; \
+    apt install -yqq \
