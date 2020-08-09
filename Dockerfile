@@ -205,3 +205,42 @@ ARG DEBIAN_FRONTEND=noninteractive
 RUN set -eux; \
     apt update; \
     apt install -yqq \
+        wget \
+        gnupg \
+        xvfb \
+        pulseaudio \
+        x11vnc \
+        fluxbox \
+        libfontconfig \
+        libfreetype6 \
+        xfonts-cyrillic \
+        xfonts-scalable \
+        fonts-liberation \
+        fonts-ipafont-gothic \
+        fonts-wqy-zenhei \
+        fonts-tlwg-loma-otf \
+        ttf-ubuntu-font-family \
+    ; \
+    wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | apt-key add -; \
+    wget -q https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb; \
+    apt install -yqq ./google-chrome-stable_current_amd64.deb; \
+    apt install -yqq google-chrome-stable; \
+    apt clean
+
+COPY docker/start-xvfb.sh /opt/bin/start-xvfb.sh
+RUN chmod ugo+x /opt/bin/start-xvfb.sh
+
+COPY docker/start-vnc.sh /opt/bin/start-vnc.sh
+RUN chmod ugo+x /opt/bin/start-vnc.sh
+
+ENV SCREEN_WIDTH 1360
+ENV SCREEN_HEIGHT 1020
+ENV SCREEN_DEPTH 24
+ENV SCREEN_DPI 96
+ENV DISPLAY :99.0
+ENV DISPLAY_NUM 99
+
+COPY docker/chrome-entrypoint.sh /opt/bin/entrypoint.sh
+RUN chmod ugo+x /opt/bin/entrypoint.sh
+
+ENTRYPOINT ["/opt/bin/entrypoint.sh"]
