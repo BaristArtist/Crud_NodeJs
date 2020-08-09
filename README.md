@@ -1,1 +1,1 @@
-This plugin 
+This plugin adds a ribbon clarifying that a product
