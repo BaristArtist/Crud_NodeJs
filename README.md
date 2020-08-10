@@ -1,1 +1,1 @@
-This plugin adds a ribbon clarifying that a product
+This plugin adds a ribbon clarifying that a product is out of stock to the product cards and main
