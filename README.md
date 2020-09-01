@@ -9,4 +9,6 @@ This plugin adds a ribbon clarifying that a product is out of stock to the produ
 </table>
 
 
-> **_NOTE:_*
+> **_NOTE:_** *This plugin requires PHP 7.4 or up*
+
+#### 
