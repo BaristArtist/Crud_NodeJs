@@ -11,4 +11,7 @@ This plugin adds a ribbon clarifying that a product is out of stock to the produ
 
 > **_NOTE:_** *This plugin requires PHP 7.4 or up*
 
-#### 
+#### Installation:
+
+1. Install using composer:
+    ```b
