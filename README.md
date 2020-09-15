@@ -16,3 +16,6 @@ This plugin adds a ribbon clarifying that a product is out of stock to the produ
 1. Install using composer:
     ```bash
     composer require nedac/sylius-temporarily-out-of-stock-plugin
+    ```
+
+2. If the `ProductRepository` is overridden 
