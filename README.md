@@ -22,4 +22,6 @@ This plugin adds a ribbon clarifying that a product is out of stock to the produ
     ```php
     <?php
 
-    # src/Repository/
+    # src/Repository/ProductRepository.php
+
+    declare(strict_types=
