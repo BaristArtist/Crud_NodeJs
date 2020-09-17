@@ -18,4 +18,8 @@ This plugin adds a ribbon clarifying that a product is out of stock to the produ
     composer require nedac/sylius-temporarily-out-of-stock-plugin
     ```
 
-2. If the `ProductRepository` is overridden in the project, then make sure it uses th
+2. If the `ProductRepository` is overridden in the project, then make sure it uses the `trait`:
+    ```php
+    <?php
+
+    # src/Repository/
