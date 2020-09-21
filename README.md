@@ -28,4 +28,5 @@ This plugin adds a ribbon clarifying that a product is out of stock to the produ
 
     namespace App\Repository;
 
-    use Nedac\SyliusTemporarilyOutOfStockPlugin\Repo
+    use Nedac\SyliusTemporarilyOutOfStockPlugin\Repository\ProductRepositoryTrait;
+    use Sylius\B
