@@ -32,4 +32,8 @@ This plugin adds a ribbon clarifying that a product is out of stock to the produ
     use Sylius\Bundle\CoreBundle\Doctrine\ORM\ProductRepository as BaseProductRepository;
 
     final class ProductRepository extends BaseProductRepository {
-       us
+       use ProductRepositoryTrait;
+    }
+    ```
+
+   
