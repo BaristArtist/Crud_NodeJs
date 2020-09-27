@@ -36,4 +36,4 @@ This plugin adds a ribbon clarifying that a product is out of stock to the produ
     }
     ```
 
-   
+    If the `ProductRepository` is *not* 
