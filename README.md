@@ -38,4 +38,9 @@ This plugin adds a ribbon clarifying that a product is out of stock to the produ
 
     If the `ProductRepository` is *not* overridden in the project, please use the repository of this plugin:
     ```yaml
-    # config/packages
+    # config/packages/_sylius.yaml
+
+    # ...
+
+    sylius_product:
+        r
