@@ -45,4 +45,5 @@ This plugin adds a ribbon clarifying that a product is out of stock to the produ
     sylius_product:
         resources:
             product:
-          
+                classes:
+                    repository: N
