@@ -49,4 +49,8 @@ This plugin adds a ribbon clarifying that a product is out of stock to the produ
                     repository: Nedac\SyliusTemporarilyOutOfStockPlugin\Repository\ProductRepository
 
     # ...
-   
+    ```
+
+3. Install assets:
+    ```bash
+    bin/console sy
