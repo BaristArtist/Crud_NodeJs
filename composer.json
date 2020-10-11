@@ -1,0 +1,7 @@
+
+{
+    "name": "nedac/sylius-temporarily-out-of-stock-plugin",
+    "type": "sylius-plugin",
+    "keywords": ["sylius", "sylius-plugin"],
+    "description": "Sylius plugin that adds a ribbon to product images of products that are out of stock.",
+    "license": "MIT",

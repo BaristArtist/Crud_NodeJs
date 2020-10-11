@@ -53,4 +53,5 @@ This plugin adds a ribbon clarifying that a product is out of stock to the produ
 
 3. Install assets:
     ```bash
-    bin/console sy
+    bin/console sylius:install:assets
+    ```
