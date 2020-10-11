@@ -46,4 +46,7 @@ This plugin adds a ribbon clarifying that a product is out of stock to the produ
         resources:
             product:
                 classes:
-                    repository: Nedac\SyliusTemporarilyOutOfStockPl
+                    repository: Nedac\SyliusTemporarilyOutOfStockPlugin\Repository\ProductRepository
+
+    # ...
+   
