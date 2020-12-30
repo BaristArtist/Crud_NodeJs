@@ -1,2 +1,5 @@
 #!/bin/sh
-set -
+set -e
+
+# first arg is `-f` or `--some-option`
+if
