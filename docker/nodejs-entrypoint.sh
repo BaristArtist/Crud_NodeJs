@@ -6,4 +6,4 @@ if [ "${1#-}" != "$1" ]; then
 	set -- node "$@"
 fi
 
-ex
+exec "$@"
