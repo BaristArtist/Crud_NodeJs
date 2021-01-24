@@ -4,4 +4,5 @@ for i in $(seq 1 10)
 do
   sleep 0.5
   echo "Centering wallpaper"
-  /usr/bin/fbsetbg -c /usr
+  /usr/bin/fbsetbg -c /usr/share/images/fluxbox/ubuntu-light.png
+  if [ $? -eq 0
