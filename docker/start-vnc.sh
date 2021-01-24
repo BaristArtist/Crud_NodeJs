@@ -5,4 +5,9 @@ do
   sleep 0.5
   echo "Centering wallpaper"
   /usr/bin/fbsetbg -c /usr/share/images/fluxbox/ubuntu-light.png
-  if [ $? -eq 0
+  if [ $? -eq 0 ]; then
+    break
+  fi
+done
+
+#if [ ! -z $VNC_NO_PASSWOR
