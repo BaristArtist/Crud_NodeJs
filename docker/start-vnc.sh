@@ -10,4 +10,5 @@ do
   fi
 done
 
-#if [ ! -z $VNC_NO_PASSWOR
+#if [ ! -z $VNC_NO_PASSWORD ]; then
+    echo "Starting VNC server witho
