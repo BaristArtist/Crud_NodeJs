@@ -17,3 +17,7 @@ done
 #    X11VNC_OPTS=-usepw
 #fi
 
+for i in $(seq 1 10)
+do
+  sleep 1
+  xdpyinfo -displa
