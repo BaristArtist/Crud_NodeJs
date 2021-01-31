@@ -12,4 +12,8 @@ done
 
 #if [ ! -z $VNC_NO_PASSWORD ]; then
     echo "Starting VNC server without password authentication"
-    X11VNC_O
+    X11VNC_OPTS=
+#else
+#    X11VNC_OPTS=-usepw
+#fi
+
