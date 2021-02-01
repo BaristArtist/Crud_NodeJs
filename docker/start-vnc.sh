@@ -20,4 +20,5 @@ done
 for i in $(seq 1 10)
 do
   sleep 1
-  xdpyinfo -displa
+  xdpyinfo -display ${DISPLAY} >/dev/null 2>&1
+  if [ $? -eq 0 ]; t
