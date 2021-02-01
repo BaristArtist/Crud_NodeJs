@@ -21,4 +21,8 @@ for i in $(seq 1 10)
 do
   sleep 1
   xdpyinfo -display ${DISPLAY} >/dev/null 2>&1
-  if [ $? -eq 0 ]; t
+  if [ $? -eq 0 ]; then
+    break
+  fi
+  echo "Waiting for Xvfb..."
+d
