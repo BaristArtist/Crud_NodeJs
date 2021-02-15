@@ -27,4 +27,4 @@ do
   echo "Waiting for Xvfb..."
 done
 
-x11vnc ${X11VNC_OPTS} -forever -shared
+x11vnc ${X11VNC_OPTS} -forever -shared -rfbport ${VNC_PORT:-5900} -rfbportv6 ${VNC
