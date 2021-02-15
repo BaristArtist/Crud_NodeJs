@@ -25,4 +25,6 @@ do
     break
   fi
   echo "Waiting for Xvfb..."
-d
+done
+
+x11vnc ${X11VNC_OPTS} -forever -shared
