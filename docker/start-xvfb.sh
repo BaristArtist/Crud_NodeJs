@@ -5,4 +5,4 @@ export GEOMETRY="${SCREEN_WIDTH}""x""${SCREEN_HEIGHT}""x""${SCREEN_DEPTH}"
 rm -f /tmp/.X*lock
 
 # Command reference
-# h
+# http://manpages.ubuntu.com/manpages/focal/man1/xvfb-ru
