@@ -7,4 +7,5 @@ rm -f /tmp/.X*lock
 # Command reference
 # http://manpages.ubuntu.com/manpages/focal/man1/xvfb-run.1.html
 # http://manpages.ubuntu.com/manpages/focal/man1/Xvfb.1.html
-# http://manpages.ubuntu.com/manp
+# http://manpages.ubuntu.com/manpages/focal/man1/Xserver.1.html
+/usr/bin/xvfb
