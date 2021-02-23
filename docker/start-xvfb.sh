@@ -8,4 +8,5 @@ rm -f /tmp/.X*lock
 # http://manpages.ubuntu.com/manpages/focal/man1/xvfb-run.1.html
 # http://manpages.ubuntu.com/manpages/focal/man1/Xvfb.1.html
 # http://manpages.ubuntu.com/manpages/focal/man1/Xserver.1.html
-/usr/bin/xvfb
+/usr/bin/xvfb-run --server-num=${DISPLAY_NUM} \
+  --li
