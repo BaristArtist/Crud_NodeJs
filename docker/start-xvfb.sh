@@ -11,4 +11,4 @@ rm -f /tmp/.X*lock
 /usr/bin/xvfb-run --server-num=${DISPLAY_NUM} \
   --listen-tcp \
   --server-args="-screen 0 ${GEOMETRY} -fbdir /var/tmp -dpi ${SCREEN_DPI} -listen tcp -noreset -ac +extension RANDR" \
-  /usr/bin/fl
+  /usr/bin/fluxbox -display ${DISPLAY}
