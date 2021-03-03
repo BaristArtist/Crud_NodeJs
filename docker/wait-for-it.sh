@@ -3,4 +3,4 @@
 
 WAITFORIT_cmdname=${0##*/}
 
-e
+echoerr() { if [[ $WAITFORIT_QUIET
