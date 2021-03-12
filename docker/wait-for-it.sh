@@ -12,4 +12,4 @@ Usage:
     $WAITFORIT_cmdname host:port [-s] [-t timeout] [-- command args]
     -h HOST | --host=HOST       Host or IP under test
     -p PORT | --port=PORT       TCP port under test
-                                Alternatively, yo
+                                Alternatively, you specify the host and port as host:por
