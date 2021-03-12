@@ -8,4 +8,5 @@ echoerr() { if [[ $WAITFORIT_QUIET -ne 1 ]]; then echo "$@" 1>&2; fi }
 usage()
 {
     cat << USAGE >&2
-Usag
+Usage:
+    $WAITFORIT_cmdname host:port [-s] [-t 
