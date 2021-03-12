@@ -11,4 +11,5 @@ usage()
 Usage:
     $WAITFORIT_cmdname host:port [-s] [-t timeout] [-- command args]
     -h HOST | --host=HOST       Host or IP under test
-    -p
+    -p PORT | --port=PORT       TCP port under test
+ 
