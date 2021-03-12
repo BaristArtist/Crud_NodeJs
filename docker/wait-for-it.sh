@@ -9,4 +9,5 @@ usage()
 {
     cat << USAGE >&2
 Usage:
-    $WAITFORIT_cmdname host:port [-s] [-t 
+    $WAITFORIT_cmdname host:port [-s] [-t timeout] [-- command args]
+    -h HOST | --h
