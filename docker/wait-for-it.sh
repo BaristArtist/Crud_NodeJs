@@ -13,4 +13,5 @@ Usage:
     -h HOST | --host=HOST       Host or IP under test
     -p PORT | --port=PORT       TCP port under test
                                 Alternatively, you specify the host and port as host:port
-    -s | --strict               Only exec
+    -s | --strict               Only execute subcommand if the test succeeds
+    -q | --q
