@@ -16,4 +16,5 @@ Usage:
     -s | --strict               Only execute subcommand if the test succeeds
     -q | --quiet                Don't output any status messages
     -t TIMEOUT | --timeout=TIMEOUT
-                                Timeout in se
+                                Timeout in seconds, zero for no timeout
+    -- COMMAND 
