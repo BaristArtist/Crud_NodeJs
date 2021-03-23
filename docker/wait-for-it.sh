@@ -24,4 +24,5 @@ USAGE
 
 wait_for()
 {
-    if [[ $WAITFORIT_TIMEOU
+    if [[ $WAITFORIT_TIMEOUT -gt 0 ]]; then
+        echoerr "$WAITFORIT_cmd
