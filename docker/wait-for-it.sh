@@ -17,4 +17,6 @@ Usage:
     -q | --quiet                Don't output any status messages
     -t TIMEOUT | --timeout=TIMEOUT
                                 Timeout in seconds, zero for no timeout
-    -- COMMAND ARGS             Execute command with args a
+    -- COMMAND ARGS             Execute command with args after the test finishes
+USAGE
+    
