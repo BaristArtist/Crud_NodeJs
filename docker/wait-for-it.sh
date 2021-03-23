@@ -19,4 +19,9 @@ Usage:
                                 Timeout in seconds, zero for no timeout
     -- COMMAND ARGS             Execute command with args after the test finishes
 USAGE
-    
+    exit 1
+}
+
+wait_for()
+{
+    if [[ $WAITFORIT_TIMEOU
