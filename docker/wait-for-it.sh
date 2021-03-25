@@ -25,4 +25,4 @@ USAGE
 wait_for()
 {
     if [[ $WAITFORIT_TIMEOUT -gt 0 ]]; then
-        echoerr "$WAITFORIT_cmd
+        echoerr "$WAITFORIT_cmdname: waiting $WAITFORIT_TIMEOUT sec
