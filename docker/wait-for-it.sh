@@ -27,4 +27,4 @@ wait_for()
     if [[ $WAITFORIT_TIMEOUT -gt 0 ]]; then
         echoerr "$WAITFORIT_cmdname: waiting $WAITFORIT_TIMEOUT seconds for $WAITFORIT_HOST:$WAITFORIT_PORT"
     else
-        echoerr "$WAITFORIT_cmdname: wait
+        echoerr "$WAITFORIT_cmdname: waiting for $WAITFORIT_HOST:$WAITFORIT_
