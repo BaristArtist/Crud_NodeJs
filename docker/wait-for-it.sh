@@ -32,4 +32,5 @@ wait_for()
     WAITFORIT_start_ts=$(date +%s)
     while :
     do
-        if [[ 
+        if [[ $WAITFORIT_ISBUSY -eq 1 ]]; then
+            nc -z $
