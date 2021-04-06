@@ -29,4 +29,7 @@ wait_for()
     else
         echoerr "$WAITFORIT_cmdname: waiting for $WAITFORIT_HOST:$WAITFORIT_PORT without a timeout"
     fi
-    WAITFORIT
+    WAITFORIT_start_ts=$(date +%s)
+    while :
+    do
+        if [[ 
