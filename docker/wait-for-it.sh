@@ -33,4 +33,5 @@ wait_for()
     while :
     do
         if [[ $WAITFORIT_ISBUSY -eq 1 ]]; then
-            nc -z $
+            nc -z $WAITFORIT_HOST $WAITFORIT_PORT
+            WA
