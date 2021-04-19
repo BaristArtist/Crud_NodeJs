@@ -39,4 +39,5 @@ wait_for()
             (echo > /dev/tcp/$WAITFORIT_HOST/$WAITFORIT_PORT) >/dev/null 2>&1
             WAITFORIT_result=$?
         fi
-        if [[ $WAITFORIT_result
+        if [[ $WAITFORIT_result -eq 0 ]]; then
+            WAITFORIT_en
