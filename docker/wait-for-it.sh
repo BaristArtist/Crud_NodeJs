@@ -40,4 +40,5 @@ wait_for()
             WAITFORIT_result=$?
         fi
         if [[ $WAITFORIT_result -eq 0 ]]; then
-            WAITFORIT_en
+            WAITFORIT_end_ts=$(date +%s)
+            echoerr "$WAITFOR
