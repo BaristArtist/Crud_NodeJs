@@ -37,4 +37,6 @@ wait_for()
             WAITFORIT_result=$?
         else
             (echo > /dev/tcp/$WAITFORIT_HOST/$WAITFORIT_PORT) >/dev/null 2>&1
-            WAITFO
+            WAITFORIT_result=$?
+        fi
+        if [[ $WAITFORIT_result
