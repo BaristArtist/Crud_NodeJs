@@ -36,4 +36,4 @@ wait_for()
             nc -z $WAITFORIT_HOST $WAITFORIT_PORT
             WAITFORIT_result=$?
         else
-            (ech
+            (echo > /dev/tcp/$WAITFORIT_HOST/$WAITFORIT_PORT
