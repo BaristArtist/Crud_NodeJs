@@ -51,4 +51,4 @@ wait_for()
 
 wait_for_wrapper()
 {
-    # In order to support SIGINT
+    # In order to support SIGINT during timeout: http://unix.stackex
