@@ -49,4 +49,6 @@ wait_for()
     return $WAITFORIT_result
 }
 
-wait_for_w
+wait_for_wrapper()
+{
+    # In order to support SIGINT
