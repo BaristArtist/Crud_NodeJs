@@ -46,4 +46,7 @@ wait_for()
         fi
         sleep 1
     done
- 
+    return $WAITFORIT_result
+}
+
+wait_for_w
