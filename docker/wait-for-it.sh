@@ -61,4 +61,5 @@ wait_for_wrapper()
     trap "kill -INT -$WAITFORIT_PID" INT
     wait $WAITFORIT_PID
     WAITFORIT_RESULT=$?
-    if [[ $WAITFORIT_RESULT
+    if [[ $WAITFORIT_RESULT -ne 0 ]]; then
+        echoerr "$WAITFO
