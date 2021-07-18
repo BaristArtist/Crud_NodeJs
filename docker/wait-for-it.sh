@@ -64,4 +64,7 @@ wait_for_wrapper()
     if [[ $WAITFORIT_RESULT -ne 0 ]]; then
         echoerr "$WAITFORIT_cmdname: timeout occurred after waiting $WAITFORIT_TIMEOUT seconds for $WAITFORIT_HOST:$WAITFORIT_PORT"
     fi
-   
+    return $WAITFORIT_RESULT
+}
+
+# process argument
