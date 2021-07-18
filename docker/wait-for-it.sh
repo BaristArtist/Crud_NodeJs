@@ -58,4 +58,5 @@ wait_for_wrapper()
         timeout $WAITFORIT_BUSYTIMEFLAG $WAITFORIT_TIMEOUT $0 --child --host=$WAITFORIT_HOST --port=$WAITFORIT_PORT --timeout=$WAITFORIT_TIMEOUT &
     fi
     WAITFORIT_PID=$!
-    trap "kill -INT 
+    trap "kill -INT -$WAITFORIT_PID" INT
+    wait $WAITFORIT_PID
