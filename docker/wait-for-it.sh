@@ -67,4 +67,7 @@ wait_for_wrapper()
     return $WAITFORIT_RESULT
 }
 
-# process argument
+# process arguments
+while [[ $# -gt 0 ]]
+do
+    case "$1" i
