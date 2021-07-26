@@ -73,4 +73,5 @@ do
     case "$1" in
         *:* )
         WAITFORIT_hostport=(${1//:/ })
-        WAITFORIT_HOST=${WAITFORI
+        WAITFORIT_HOST=${WAITFORIT_hostport[0]}
+        WAITFORIT_PORT=${W
