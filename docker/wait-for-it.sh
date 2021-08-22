@@ -77,4 +77,6 @@ do
         WAITFORIT_PORT=${WAITFORIT_hostport[1]}
         shift 1
         ;;
-  
+        --child)
+        WAITFORIT_CHILD=1
+        
