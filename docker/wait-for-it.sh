@@ -79,4 +79,7 @@ do
         ;;
         --child)
         WAITFORIT_CHILD=1
-        
+        shift 1
+        ;;
+        -q | --quiet)
+  
