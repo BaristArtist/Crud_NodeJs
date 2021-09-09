@@ -84,4 +84,6 @@ do
         -q | --quiet)
         WAITFORIT_QUIET=1
         shift 1
-       
+        ;;
+        -s | --strict)
+        WAITFORIT_STRICT=
