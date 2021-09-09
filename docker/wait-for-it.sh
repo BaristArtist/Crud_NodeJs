@@ -86,4 +86,7 @@ do
         shift 1
         ;;
         -s | --strict)
-        WAITFORIT_STRICT=
+        WAITFORIT_STRICT=1
+        shift 1
+        ;;
+        -h)
