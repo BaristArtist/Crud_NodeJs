@@ -90,3 +90,5 @@ do
         shift 1
         ;;
         -h)
+        WAITFORIT_HOST="$2"
+        if [[ $W
