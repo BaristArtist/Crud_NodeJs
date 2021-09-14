@@ -91,4 +91,5 @@ do
         ;;
         -h)
         WAITFORIT_HOST="$2"
-        if [[ $W
+        if [[ $WAITFORIT_HOST == "" ]]; then break; fi
+        shift 2
