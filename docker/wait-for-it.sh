@@ -95,4 +95,7 @@ do
         shift 2
         ;;
         --host=*)
-        WAITFORIT_HO
+        WAITFORIT_HOST="${1#*=}"
+        shift 1
+        ;;
+        -p
