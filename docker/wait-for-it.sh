@@ -93,3 +93,6 @@ do
         WAITFORIT_HOST="$2"
         if [[ $WAITFORIT_HOST == "" ]]; then break; fi
         shift 2
+        ;;
+        --host=*)
+        WAITFORIT_HO
