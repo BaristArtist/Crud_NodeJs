@@ -98,4 +98,6 @@ do
         WAITFORIT_HOST="${1#*=}"
         shift 1
         ;;
-        -p
+        -p)
+        WAITFORIT_PORT="$2"
+       
