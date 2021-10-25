@@ -100,4 +100,4 @@ do
         ;;
         -p)
         WAITFORIT_PORT="$2"
-       
+        if [[ $WAITFORIT_PORT == "" ]]; then 
