@@ -100,4 +100,7 @@ do
         ;;
         -p)
         WAITFORIT_PORT="$2"
-        if [[ $WAITFORIT_PORT == "" ]]; then 
+        if [[ $WAITFORIT_PORT == "" ]]; then break; fi
+        shift 2
+        ;;
+       
