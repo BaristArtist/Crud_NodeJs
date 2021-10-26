@@ -106,4 +106,7 @@ do
         --port=*)
         WAITFORIT_PORT="${1#*=}"
         shift 1
-        ;
+        ;;
+        -t)
+        WAITFORIT_TIMEOUT="$2"
+   
