@@ -103,4 +103,5 @@ do
         if [[ $WAITFORIT_PORT == "" ]]; then break; fi
         shift 2
         ;;
-       
+        --port=*)
+        WAITFORIT_PORT=
