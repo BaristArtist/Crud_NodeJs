@@ -104,4 +104,6 @@ do
         shift 2
         ;;
         --port=*)
-        WAITFORIT_PORT=
+        WAITFORIT_PORT="${1#*=}"
+        shift 1
+        ;
