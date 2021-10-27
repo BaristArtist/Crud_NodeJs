@@ -114,4 +114,7 @@ do
         ;;
         --timeout=*)
         WAITFORIT_TIMEOUT="${1#*=}"
-    
+        shift 1
+        ;;
+        --)
+      
