@@ -109,4 +109,7 @@ do
         ;;
         -t)
         WAITFORIT_TIMEOUT="$2"
-        if [[ $WAITFORIT_TIMEOUT == "" ]]; then br
+        if [[ $WAITFORIT_TIMEOUT == "" ]]; then break; fi
+        shift 2
+        ;;
+        --timeout=*)
