@@ -109,4 +109,4 @@ do
         ;;
         -t)
         WAITFORIT_TIMEOUT="$2"
-   
+        if [[ $WAITFORIT_TIMEOUT == "" ]]; then br
