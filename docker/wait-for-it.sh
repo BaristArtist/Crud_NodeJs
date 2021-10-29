@@ -117,4 +117,6 @@ do
         shift 1
         ;;
         --)
-      
+        shift
+        WAITFORIT_CLI=("$@")
+        brea
