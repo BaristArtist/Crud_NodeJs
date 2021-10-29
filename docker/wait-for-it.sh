@@ -123,4 +123,6 @@ do
         ;;
         --help)
         usage
-        
+        ;;
+        *)
+        echoerr "Unknown argument
