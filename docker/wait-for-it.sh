@@ -125,4 +125,8 @@ do
         usage
         ;;
         *)
-        echoerr "Unknown argument
+        echoerr "Unknown argument: $1"
+        usage
+        ;;
+    esac
+don
