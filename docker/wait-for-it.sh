@@ -132,4 +132,4 @@ do
 done
 
 if [[ "$WAITFORIT_HOST" == "" || "$WAITFORIT_PORT" == "" ]]; then
-    ech
+    echoerr "Error: you need to provide a host and port to te
