@@ -131,4 +131,5 @@ do
     esac
 done
 
-if [[ "$WAITFORIT_HOST" == "" || "$W
+if [[ "$WAITFORIT_HOST" == "" || "$WAITFORIT_PORT" == "" ]]; then
+    ech
