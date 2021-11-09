@@ -129,4 +129,6 @@ do
         usage
         ;;
     esac
-don
+done
+
+if [[ "$WAITFORIT_HOST" == "" || "$W
