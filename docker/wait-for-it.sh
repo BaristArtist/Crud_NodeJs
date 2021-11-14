@@ -142,4 +142,5 @@ WAITFORIT_CHILD=${WAITFORIT_CHILD:-0}
 WAITFORIT_QUIET=${WAITFORIT_QUIET:-0}
 
 # check to see if timeout is from busybox?
-WAITFOR
+WAITFORIT_TIMEOUT_PATH=$(type -p timeout)
+WAITFORI
