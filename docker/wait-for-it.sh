@@ -149,4 +149,8 @@ if [[ $WAITFORIT_TIMEOUT_PATH =~ "busybox" ]]; then
         WAITFORIT_BUSYTIMEFLAG="-t"
 
 else
-        WAITFO
+        WAITFORIT_ISBUSY=0
+        WAITFORIT_BUSYTIMEFLAG=""
+fi
+
+i
