@@ -154,4 +154,7 @@ else
 fi
 
 if [[ $WAITFORIT_CHILD -gt 0 ]]; then
-   
+    wait_for
+    WAITFORIT_RESULT=$?
+    exit $WAITFORIT_RESULT
+els
