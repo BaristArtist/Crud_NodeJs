@@ -153,4 +153,5 @@ else
         WAITFORIT_BUSYTIMEFLAG=""
 fi
 
-i
+if [[ $WAITFORIT_CHILD -gt 0 ]]; then
+   
