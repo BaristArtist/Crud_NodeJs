@@ -161,3 +161,6 @@ else
     if [[ $WAITFORIT_TIMEOUT -gt 0 ]]; then
         wait_for_wrapper
         WAITFORIT_RESULT=$?
+    else
+        wait_for
+        WAITF
