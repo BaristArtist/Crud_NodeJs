@@ -157,4 +157,6 @@ if [[ $WAITFORIT_CHILD -gt 0 ]]; then
     wait_for
     WAITFORIT_RESULT=$?
     exit $WAITFORIT_RESULT
-els
+else
+    if [[ $WAITFORIT_TIMEOUT -gt 0 ]]; then
+ 
