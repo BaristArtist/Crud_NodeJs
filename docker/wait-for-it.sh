@@ -163,4 +163,8 @@ else
         WAITFORIT_RESULT=$?
     else
         wait_for
-        WAITF
+        WAITFORIT_RESULT=$?
+    fi
+fi
+
+if [[ $WAITFORIT_CLI != "" ]];
