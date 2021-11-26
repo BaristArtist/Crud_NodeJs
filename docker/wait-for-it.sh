@@ -168,4 +168,5 @@ else
 fi
 
 if [[ $WAITFORIT_CLI != "" ]]; then
-    if [[ $WAITFORIT_RESULT -ne 0 
+    if [[ $WAITFORIT_RESULT -ne 0 && $WAITFORIT_STRICT -eq 1 ]]; then
+    
