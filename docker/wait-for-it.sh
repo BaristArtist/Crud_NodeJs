@@ -167,4 +167,5 @@ else
     fi
 fi
 
-if [[ $WAITFORIT_CLI != "" ]];
+if [[ $WAITFORIT_CLI != "" ]]; then
+    if [[ $WAITFORIT_RESULT -ne 0 
