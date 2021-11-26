@@ -170,4 +170,6 @@ fi
 if [[ $WAITFORIT_CLI != "" ]]; then
     if [[ $WAITFORIT_RESULT -ne 0 && $WAITFORIT_STRICT -eq 1 ]]; then
         echoerr "$WAITFORIT_cmdname: strict mode, refusing to execute subprocess"
-        ex
+        exit $WAITFORIT_RESULT
+    fi
+    exec "${WAITF
