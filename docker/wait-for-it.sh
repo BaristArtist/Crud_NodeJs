@@ -172,4 +172,6 @@ if [[ $WAITFORIT_CLI != "" ]]; then
         echoerr "$WAITFORIT_cmdname: strict mode, refusing to execute subprocess"
         exit $WAITFORIT_RESULT
     fi
-    exec "${WAITF
+    exec "${WAITFORIT_CLI[@]}"
+else
+    exit $WAITFOR
