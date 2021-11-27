@@ -1,0 +1,24 @@
+
+version: '3.4'
+
+services:
+  php:
+    build:
+      context: .
+      target: sylius_temporarily_out_of_stock_plugin_php
+      network: host
+      args:
+        - PRIVATE_FLEX=${PRIVATE_FLEX:-false}
+    image: ghcr.io/nedac-sorbo/sylius_temporarily_out_of_stock_plugin_php:latest
+    environment:
+      - APP_ENV=test
+      - DATABASE_URL=mysql://sylius:temporarily_out_of_stock@127.0.0.1:3306/sylius_temporarily_out_of_stock
+    volumes:
+      # TODO: Mount templates/folders
+      - .:/srv/sylius/vendor/nedac/sylius-temporarily-out-of-stock-plugin
+      - ./etc/build:/srv/sylius/etc/build
+      - public:/srv/sylius/public:rw
+      - public-media:/srv/sylius/public/media:rw
+    network_mode: host
+
+  mysql:
