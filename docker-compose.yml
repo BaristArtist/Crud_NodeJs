@@ -22,3 +22,50 @@ services:
     network_mode: host
 
   mysql:
+    image: mysql:5.7
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=sylius_temporarily_out_of_stock
+      - MYSQL_USER=sylius
+      - MYSQL_PASSWORD=temporarily_out_of_stock
+    network_mode: host
+
+  nginx:
+    build:
+      context: .
+      target: sylius_temporarily_out_of_stock_plugin_nginx
+      network: host
+      args:
+        - PRIVATE_FLEX=${PRIVATE_FLEX:-false}
+    image: ghcr.io/nedac-sorbo/sylius_temporarily_out_of_stock_plugin_nginx:latest
+    volumes:
+      - public:/srv/sylius/public:ro
+      - public-media:/srv/sylius/public/media:ro,nocopy
+    network_mode: host
+
+  nodejs:
+    build:
+      context: .
+      target: sylius_temporarily_out_of_stock_plugin_nodejs
+      network: host
+      args:
+        - PRIVATE_FLEX=${PRIVATE_FLEX:-false}
+    image: ghcr.io/nedac-sorbo/sylius_temporarily_out_of_stock_plugin_nodejs:latest
+    volumes:
+      - ./src/Resources/public:/srv/sylius/vendor/nedac/sylius-temporarily-out-of-stock-plugin/src/Resources/public
+    network_mode: host
+
+  chrome:
+    build:
+      context: .
+      target: sylius_temporarily_out_of_stock_plugin_chrome
+      network: host
+      args:
+        - PRIVATE_FLEX=${PRIVATE_FLEX:-false}
+    image: ghcr.io/nedac-sorbo/sylius_temporarily_out_of_stock_plugin_chrome:latest
+    volumes:
+      - /dev/shm:/dev/shm
+    network_mode: host
+
+volumes:
+  public:
