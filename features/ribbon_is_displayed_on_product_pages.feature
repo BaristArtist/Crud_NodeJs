@@ -5,4 +5,5 @@ Feature:
   So that I don't have to try to order a product to find out
 
   Background:
-    Given the store operat
+    Given the store operates on a single channel in "United States"
+    And t
