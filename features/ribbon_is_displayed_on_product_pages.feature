@@ -6,4 +6,5 @@ Feature:
 
   Background:
     Given the store operates on a single channel in "United States"
-    And t
+    And the store classifies its products as "Fruits"
+    And 
