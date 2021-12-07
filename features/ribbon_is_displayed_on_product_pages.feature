@@ -8,4 +8,5 @@ Feature:
     Given the store operates on a single channel in "United States"
     And the store classifies its products as "Fruits"
     And the store has a product "Banana" with code "banana", created at "05-10-2019"
-    And
+    And this product belongs to "Fruits"
+    And this produc
