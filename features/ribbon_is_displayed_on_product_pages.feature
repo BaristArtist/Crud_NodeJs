@@ -9,4 +9,5 @@ Feature:
     And the store classifies its products as "Fruits"
     And the store has a product "Banana" with code "banana", created at "05-10-2019"
     And this product belongs to "Fruits"
-    And this produc
+    And this product's price is "$1.25"
+    And this product i
