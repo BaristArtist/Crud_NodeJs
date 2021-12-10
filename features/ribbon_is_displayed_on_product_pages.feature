@@ -10,4 +10,5 @@ Feature:
     And the store has a product "Banana" with code "banana", created at "05-10-2019"
     And this product belongs to "Fruits"
     And this product's price is "$1.25"
-    And this product i
+    And this product is tracked by the inventory
+    And there are 0 uni
