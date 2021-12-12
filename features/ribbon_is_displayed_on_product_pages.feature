@@ -12,4 +12,5 @@ Feature:
     And this product's price is "$1.25"
     And this product is tracked by the inventory
     And there are 0 units of product "Banana" available in the inventory
-    And the store has a product "Pineapple" with code "pineapple", created at "05-1
+    And the store has a product "Pineapple" with code "pineapple", created at "05-10-2019"
+    And this product belongs to "Fr
