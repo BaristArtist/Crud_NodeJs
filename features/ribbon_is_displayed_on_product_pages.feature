@@ -14,4 +14,6 @@ Feature:
     And there are 0 units of product "Banana" available in the inventory
     And the store has a product "Pineapple" with code "pineapple", created at "05-10-2019"
     And this product belongs to "Fruits"
-    And this product's price is "$
+    And this product's price is "$5.00"
+    And this product is tracked by the inventory
+  
