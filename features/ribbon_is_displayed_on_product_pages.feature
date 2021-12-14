@@ -13,4 +13,5 @@ Feature:
     And this product is tracked by the inventory
     And there are 0 units of product "Banana" available in the inventory
     And the store has a product "Pineapple" with code "pineapple", created at "05-10-2019"
-    And this product belongs to "Fr
+    And this product belongs to "Fruits"
+    And this product's price is "$
