@@ -16,4 +16,4 @@ Feature:
     And this product belongs to "Fruits"
     And this product's price is "$5.00"
     And this product is tracked by the inventory
-  
+    And there are 2 units of product "Pineapple" availabl
