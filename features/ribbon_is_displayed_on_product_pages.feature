@@ -18,4 +18,4 @@ Feature:
     And this product is tracked by the inventory
     And there are 2 units of product "Pineapple" available in the inventory
 
-  Scenario: Ribbon is d
+  Scenario: Ribbon is displayed on product cards of products th
