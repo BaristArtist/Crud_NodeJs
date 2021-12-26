@@ -19,4 +19,5 @@ Feature:
     And there are 2 units of product "Pineapple" available in the inventory
 
   Scenario: Ribbon is displayed on product cards of products that are out of stock
-    When I browse prod
+    When I browse products from taxon "Fruits"
+    Then I s
