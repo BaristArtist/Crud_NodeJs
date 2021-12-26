@@ -20,4 +20,4 @@ Feature:
 
   Scenario: Ribbon is displayed on product cards of products that are out of stock
     When I browse products from taxon "Fruits"
-    Then I s
+    Then I should see the ribbon with text "Temporarily 
