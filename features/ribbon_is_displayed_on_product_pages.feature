@@ -20,4 +20,6 @@ Feature:
 
   Scenario: Ribbon is displayed on product cards of products that are out of stock
     When I browse products from taxon "Fruits"
-    Then I should see the ribbon with text "Temporarily out of stock" on the "Banana" product card on the ind
+    Then I should see the ribbon with text "Temporarily out of stock" on the "Banana" product card on the index page
+
+  Scenario: Ribbon is not displayed on produ
