@@ -23,4 +23,4 @@ Feature:
     Then I should see the ribbon with text "Temporarily out of stock" on the "Banana" product card on the index page
 
   Scenario: Ribbon is not displayed on product cards of products that are not out of stock
- 
+    When I browse products from taxon "
