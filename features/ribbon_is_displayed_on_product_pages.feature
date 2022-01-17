@@ -26,4 +26,5 @@ Feature:
     When I browse products from taxon "Fruits"
     Then I should not see the ribbon with text "Temporarily out of stock" on the "Pineapple" product card on the index page
 
-  Scenario: Ribbon is displayed on product show page of product that is o
+  Scenario: Ribbon is displayed on product show page of product that is out of stock
+    When I view product "Ba
