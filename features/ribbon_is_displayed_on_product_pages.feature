@@ -28,4 +28,4 @@ Feature:
 
   Scenario: Ribbon is displayed on product show page of product that is out of stock
     When I view product "Banana"
-    Then I should see the ribbon w
+    Then I should see the ribbon with text "Temporarily out of stock" on the product
