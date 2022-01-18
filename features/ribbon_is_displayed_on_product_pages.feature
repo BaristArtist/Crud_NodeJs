@@ -27,4 +27,5 @@ Feature:
     Then I should not see the ribbon with text "Temporarily out of stock" on the "Pineapple" product card on the index page
 
   Scenario: Ribbon is displayed on product show page of product that is out of stock
-    When I view product "Ba
+    When I view product "Banana"
+    Then I should see the ribbon w
