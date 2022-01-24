@@ -31,4 +31,4 @@ Feature:
     Then I should see the ribbon with text "Temporarily out of stock" on the product image
     And I should see the ribbon with text "Temporarily out of stock" on the "Banana" product card on the show page
 
-  
+  Scenario: Ribbon is not displayed on prod
