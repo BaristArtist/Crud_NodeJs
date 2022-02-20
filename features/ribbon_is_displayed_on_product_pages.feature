@@ -33,4 +33,5 @@ Feature:
 
   Scenario: Ribbon is not displayed on product show page of product that is not out of stock
     When I view product "Pineapple"
-    Then I should not see the ribbon with text "Temporarily out of stock" on the produ
+    Then I should not see the ribbon with text "Temporarily out of stock" on the product image
+    And I should see the ribbon with text "Temporar
