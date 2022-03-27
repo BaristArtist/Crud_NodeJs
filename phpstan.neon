@@ -1,0 +1,7 @@
+
+parameters:
+    reportUnmatchedIgnoredErrors: false
+
+    ignoreErrors:
+        - '/Method Nedac\\SyliusTemporarilyOutOfStockPlugin\\Fixture\\ChannelExampleFactory::create\(\) has parameter \$options with no value type specified in iterable type array./'
+        - '/Method Nedac\\SyliusTemporarilyOutOfStockPlugin\\DependencyInjection\\NedacSyliusTemporarilyOutOfStockExtension::load\(\) has parameter \$config with no value type specified in iterable type array./'
