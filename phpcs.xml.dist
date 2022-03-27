@@ -10,4 +10,7 @@
 
     <rule ref="PSR12"/>
 
-    <file>src/</
+    <file>src/</file>
+    <file>tests/Behat</file>
+
+</ruleset>
