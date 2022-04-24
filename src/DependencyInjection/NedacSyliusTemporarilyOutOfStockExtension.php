@@ -13,4 +13,5 @@ use Webmozart\Assert\Assert;
 
 final class NedacSyliusTemporarilyOutOfStockExtension extends Extension
 {
-    public function load
+    public function load(array $config, ContainerBuilder $container): void
+   
