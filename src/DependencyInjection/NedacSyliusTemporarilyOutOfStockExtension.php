@@ -11,4 +11,6 @@ use Symfony\Component\DependencyInjection\Extension\Extension;
 use Symfony\Component\DependencyInjection\Loader\XmlFileLoader;
 use Webmozart\Assert\Assert;
 
-final class NedacSyliusTemporarilyOutOfStockExtension ext
+final class NedacSyliusTemporarilyOutOfStockExtension extends Extension
+{
+    public function load
