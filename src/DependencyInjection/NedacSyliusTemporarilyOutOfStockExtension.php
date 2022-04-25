@@ -17,4 +17,6 @@ final class NedacSyliusTemporarilyOutOfStockExtension extends Extension
     {
         $configuration = $this->getConfiguration([], $container);
 
-        Assert::isInstanceOf($configuration, ConfigurationI
+        Assert::isInstanceOf($configuration, ConfigurationInterface::class);
+
+        $this->p
