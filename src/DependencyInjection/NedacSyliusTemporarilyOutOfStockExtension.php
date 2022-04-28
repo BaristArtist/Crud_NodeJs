@@ -20,4 +20,4 @@ final class NedacSyliusTemporarilyOutOfStockExtension extends Extension
         Assert::isInstanceOf($configuration, ConfigurationInterface::class);
 
         $this->processConfiguration($configuration, $config);
-        $loader = new XmlFileLoader($cont
+        $loader = new XmlFileLoader($container, new FileLocator(__DIR__ . '/../Resour
