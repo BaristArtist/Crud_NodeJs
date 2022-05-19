@@ -4,4 +4,5 @@ declare(strict_types=1);
 
 namespace Nedac\SyliusTemporarilyOutOfStockPlugin\Doctrine\Dql;
 
-use Doctrine\ORM\Query\AST\ASTExcep
+use Doctrine\ORM\Query\AST\ASTException;
+use Doctrine\ORM\Query\AST\Funct
