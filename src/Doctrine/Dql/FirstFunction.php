@@ -8,4 +8,5 @@ use Doctrine\ORM\Query\AST\ASTException;
 use Doctrine\ORM\Query\AST\Functions\FunctionNode;
 use Doctrine\ORM\Query\AST\Subselect;
 use Doctrine\ORM\Query\Lexer;
-use Doctri
+use Doctrine\ORM\Query\Parser;
+use Doctrine\ORM\Query
