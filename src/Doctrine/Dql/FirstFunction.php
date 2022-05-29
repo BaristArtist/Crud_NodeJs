@@ -13,4 +13,6 @@ use Doctrine\ORM\Query\SqlWalker;
 
 /**
  * FirstFunction ::=
- * 
+ *     "FIRST" "(" Subselect ")"
+ */
+final clas
