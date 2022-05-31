@@ -15,4 +15,8 @@ use Doctrine\ORM\Query\SqlWalker;
  * FirstFunction ::=
  *     "FIRST" "(" Subselect ")"
  */
-final class FirstFunction extends Function
+final class FirstFunction extends FunctionNode
+{
+    private Subselect $subselect;
+
+  
