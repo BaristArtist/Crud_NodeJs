@@ -20,3 +20,5 @@ final class FirstFunction extends FunctionNode
     private Subselect $subselect;
 
     public function parse(Parser $parser): void
+    {
+        $parser->match(Lexer::T_IDEN
