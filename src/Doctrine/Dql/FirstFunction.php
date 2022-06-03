@@ -23,4 +23,5 @@ final class FirstFunction extends FunctionNode
     {
         $parser->match(Lexer::T_IDENTIFIER);
         $parser->match(Lexer::T_OPEN_PARENTHESIS);
-        $this->subselect 
+        $this->subselect = $parser->Subselect();
+        $parser->match
