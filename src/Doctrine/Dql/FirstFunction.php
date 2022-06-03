@@ -22,4 +22,5 @@ final class FirstFunction extends FunctionNode
     public function parse(Parser $parser): void
     {
         $parser->match(Lexer::T_IDENTIFIER);
-        $parser->match(Lexer::T_OPEN
+        $parser->match(Lexer::T_OPEN_PARENTHESIS);
+        $this->subselect 
