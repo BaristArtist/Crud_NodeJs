@@ -34,4 +34,4 @@ final class FirstFunction extends FunctionNode
      */
     public function getSql(SqlWalker $sqlWalker): string
     {
-        return '(' . $this-
+        return '(' . $this->subselect->dispatch($sqlWalker) . ' LIMI
