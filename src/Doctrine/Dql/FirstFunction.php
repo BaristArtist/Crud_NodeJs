@@ -32,4 +32,6 @@ final class FirstFunction extends FunctionNode
      * @return string
      * @throws ASTException
      */
-    public function getSql(SqlWalk
+    public function getSql(SqlWalker $sqlWalker): string
+    {
+        return '(' . $this-
