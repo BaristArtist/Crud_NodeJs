@@ -31,4 +31,5 @@ final class FirstFunction extends FunctionNode
      * @param SqlWalker $sqlWalker
      * @return string
      * @throws ASTException
-  
+     */
+    public function getSql(SqlWalk
