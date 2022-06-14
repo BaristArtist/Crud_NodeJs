@@ -9,4 +9,6 @@ use Sylius\Component\Core\Model\ChannelInterface;
 
 final class ChannelExampleFactory extends BaseChannelExampleFactory
 {
-    public function create(array $o
+    public function create(array $options = []): ChannelInterface
+    {
+        $c
