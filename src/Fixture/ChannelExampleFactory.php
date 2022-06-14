@@ -7,4 +7,4 @@ namespace Nedac\SyliusTemporarilyOutOfStockPlugin\Fixture;
 use Sylius\Bundle\CoreBundle\Fixture\Factory\ChannelExampleFactory as BaseChannelExampleFactory;
 use Sylius\Component\Core\Model\ChannelInterface;
 
-final class ChannelExam
+final class ChannelExampleFactory extends BaseChannelExa
