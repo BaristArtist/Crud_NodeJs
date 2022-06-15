@@ -11,4 +11,6 @@ final class ChannelExampleFactory extends BaseChannelExampleFactory
 {
     public function create(array $options = []): ChannelInterface
     {
-        $c
+        $channel = parent::create($options);
+
+        $channe
