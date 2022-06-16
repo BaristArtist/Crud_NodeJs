@@ -13,4 +13,8 @@ final class ChannelExampleFactory extends BaseChannelExampleFactory
     {
         $channel = parent::create($options);
 
-        $channel->setThemeName('nedac/bootstrap-theme')
+        $channel->setThemeName('nedac/bootstrap-theme');
+
+        return $channel;
+    }
+}
