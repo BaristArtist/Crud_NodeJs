@@ -1,3 +1,5 @@
 <?php
 
-declare(st
+declare(strict_types=1);
+
+namespace Nedac\Syli
