@@ -4,4 +4,4 @@ declare(strict_types=1);
 
 namespace Nedac\SyliusTemporarilyOutOfStockPlugin\Inventory\Checker;
 
-use Sylius\Component\Inventory\Checke
+use Sylius\Component\Inventory\Checker\AvailabilityCheckerInterface as Interna
