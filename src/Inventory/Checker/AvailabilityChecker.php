@@ -7,4 +7,4 @@ namespace Nedac\SyliusTemporarilyOutOfStockPlugin\Inventory\Checker;
 use Sylius\Component\Inventory\Checker\AvailabilityCheckerInterface as InternalAvailabilityCheckerInterface;
 use Sylius\Component\Inventory\Model\StockableInterface;
 
-final class AvailabilityCh
+final class AvailabilityChecker implements AvailabilityCheckerInterface
