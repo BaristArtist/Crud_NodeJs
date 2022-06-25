@@ -8,3 +8,5 @@ use Sylius\Component\Inventory\Checker\AvailabilityCheckerInterface as InternalA
 use Sylius\Component\Inventory\Model\StockableInterface;
 
 final class AvailabilityChecker implements AvailabilityCheckerInterface
+{
+    private InternalAvailabilityCheckerInterface 
