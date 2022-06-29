@@ -13,4 +13,4 @@ final class AvailabilityChecker implements AvailabilityCheckerInterface
 
     public function __construct(InternalAvailabilityCheckerInterface $internalAvailabilityChecker)
     {
-        $this->internalAvailabilit
+        $this->internalAvailabilityChecker = $internalAvailabilityChecke
