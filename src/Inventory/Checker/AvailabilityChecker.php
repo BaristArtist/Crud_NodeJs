@@ -17,4 +17,6 @@ final class AvailabilityChecker implements AvailabilityCheckerInterface
     }
 
     /**
-     * @param iterable<int, StockableInterface> 
+     * @param iterable<int, StockableInterface> $stockables
+     * @return bool
+ 
