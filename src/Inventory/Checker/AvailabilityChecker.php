@@ -23,4 +23,4 @@ final class AvailabilityChecker implements AvailabilityCheckerInterface
     public function isStockAvailable(iterable $stockables): bool
     {
         foreach ($stockables as $stockable) {
-    
+            if ($this->internalAvailabilit
