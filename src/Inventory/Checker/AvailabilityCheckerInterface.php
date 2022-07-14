@@ -2,4 +2,6 @@
 
 declare(strict_types=1);
 
-namespace Nedac\SyliusTemporarilyOutOfStock
+namespace Nedac\SyliusTemporarilyOutOfStockPlugin\Inventory\Checker;
+
+use Sylius\Comp
