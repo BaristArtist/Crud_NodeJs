@@ -9,4 +9,4 @@ use Sylius\Component\Inventory\Model\StockableInterface;
 interface AvailabilityCheckerInterface
 {
     /**
- 
+     * @param iterable<int, StockableInterf
