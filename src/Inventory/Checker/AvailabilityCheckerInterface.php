@@ -4,4 +4,6 @@ declare(strict_types=1);
 
 namespace Nedac\SyliusTemporarilyOutOfStockPlugin\Inventory\Checker;
 
-use Sylius\Comp
+use Sylius\Component\Inventory\Model\StockableInterface;
+
+interf
