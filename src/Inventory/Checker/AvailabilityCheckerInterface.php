@@ -12,4 +12,4 @@ interface AvailabilityCheckerInterface
      * @param iterable<int, StockableInterface> $stockables
      * @return bool
      */
-    publi
+    public function isStockAvailable(iterable $stockable
