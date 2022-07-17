@@ -9,4 +9,7 @@ use Sylius\Component\Inventory\Model\StockableInterface;
 interface AvailabilityCheckerInterface
 {
     /**
-     * @param iterable<int, StockableInterf
+     * @param iterable<int, StockableInterface> $stockables
+     * @return bool
+     */
+    publi
