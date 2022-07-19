@@ -2,4 +2,6 @@
 
 declare(strict_types=1);
 
-names
+namespace Nedac\SyliusTemporarilyOutOfStockPlugin;
+
+u
