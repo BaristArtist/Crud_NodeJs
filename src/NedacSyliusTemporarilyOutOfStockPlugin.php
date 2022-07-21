@@ -4,4 +4,4 @@ declare(strict_types=1);
 
 namespace Nedac\SyliusTemporarilyOutOfStockPlugin;
 
-u
+use Sylius\Bundle\CoreBundle\Application\SyliusPlug
