@@ -9,3 +9,5 @@ use Symfony\Component\HttpKernel\Bundle\Bundle;
 
 final class NedacSyliusTemporarilyOutOfStockPlugin extends Bundle
 {
+    use SyliusPluginTrait;
+}
