@@ -1,3 +1,5 @@
 <?php
 
-declare(s
+declare(strict_types=1);
+
+namespace Nedac\Syl
