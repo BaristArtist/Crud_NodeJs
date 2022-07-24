@@ -4,4 +4,5 @@ declare(strict_types=1);
 
 namespace Nedac\SyliusTemporarilyOutOfStockPlugin\Repository;
 
-u
+use Doctrine\ORM\QueryBuilder;
+use Sylius\Componen
