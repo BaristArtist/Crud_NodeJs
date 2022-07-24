@@ -6,4 +6,6 @@ namespace Nedac\SyliusTemporarilyOutOfStockPlugin\Repository;
 
 use Doctrine\ORM\QueryBuilder;
 use Sylius\Component\Core\Model\ChannelInterface;
-use Sylius\Co
+use Sylius\Component\Core\Model\TaxonInterface;
+
+/**
