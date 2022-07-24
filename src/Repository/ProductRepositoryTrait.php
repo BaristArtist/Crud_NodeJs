@@ -2,4 +2,6 @@
 
 declare(strict_types=1);
 
-namespace Nedac\Syl
+namespace Nedac\SyliusTemporarilyOutOfStockPlugin\Repository;
+
+u
