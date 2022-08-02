@@ -9,4 +9,6 @@ use Sylius\Component\Core\Model\ChannelInterface;
 use Sylius\Component\Core\Model\TaxonInterface;
 
 /**
- * @method QueryBuilder createQueryBuilder(string $ali
+ * @method QueryBuilder createQueryBuilder(string $alias, ?string $indexBy = null)
+ */
+trait Product
