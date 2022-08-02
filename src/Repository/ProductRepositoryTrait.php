@@ -9,3 +9,4 @@ use Sylius\Component\Core\Model\ChannelInterface;
 use Sylius\Component\Core\Model\TaxonInterface;
 
 /**
+ * @method QueryBuilder createQueryBuilder(string $ali
