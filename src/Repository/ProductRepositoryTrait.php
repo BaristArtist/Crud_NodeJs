@@ -14,4 +14,5 @@ use Sylius\Component\Core\Model\TaxonInterface;
 trait ProductRepositoryTrait
 {
     /**
-     * @
+     * @param array<string, string> $sorting
+     *
