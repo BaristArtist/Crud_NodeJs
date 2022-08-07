@@ -18,4 +18,5 @@ trait ProductRepositoryTrait
      */
     public function createShopListQueryBuilder(
         ChannelInterface $channel,
-        T
+        TaxonInterface $taxon,
+        string $local
