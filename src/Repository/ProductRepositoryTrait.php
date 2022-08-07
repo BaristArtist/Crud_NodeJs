@@ -17,3 +17,5 @@ trait ProductRepositoryTrait
      * @param array<string, string> $sorting
      */
     public function createShopListQueryBuilder(
+        ChannelInterface $channel,
+        T
