@@ -21,4 +21,5 @@ trait ProductRepositoryTrait
         TaxonInterface $taxon,
         string $locale,
         array $sorting = [],
-        bool $incl
+        bool $includeAllDescendants = false
+    ): QueryBuilde
