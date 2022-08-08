@@ -24,4 +24,5 @@ trait ProductRepositoryTrait
         bool $includeAllDescendants = false
     ): QueryBuilder {
         $queryBuilder = $this->createQueryBuilder('o')
-            ->dis
+            ->distinct()
+            ->addSelect('translation'
