@@ -22,4 +22,5 @@ trait ProductRepositoryTrait
         string $locale,
         array $sorting = [],
         bool $includeAllDescendants = false
-    ): QueryBuilde
+    ): QueryBuilder {
+        $queryBuilder = $this
