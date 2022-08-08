@@ -23,4 +23,5 @@ trait ProductRepositoryTrait
         array $sorting = [],
         bool $includeAllDescendants = false
     ): QueryBuilder {
-        $queryBuilder = $this
+        $queryBuilder = $this->createQueryBuilder('o')
+            ->dis
