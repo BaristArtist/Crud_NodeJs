@@ -25,4 +25,6 @@ trait ProductRepositoryTrait
     ): QueryBuilder {
         $queryBuilder = $this->createQueryBuilder('o')
             ->distinct()
-            ->addSelect('translation'
+            ->addSelect('translation')
+            ->addSelect('productTaxon')
+            -
