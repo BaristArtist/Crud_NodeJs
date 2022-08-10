@@ -27,4 +27,4 @@ trait ProductRepositoryTrait
             ->distinct()
             ->addSelect('translation')
             ->addSelect('productTaxon')
-            -
+            ->innerJoin('o.translations', 'translation', 'WITH
