@@ -28,4 +28,4 @@ trait ProductRepositoryTrait
             ->addSelect('translation')
             ->addSelect('productTaxon')
             ->innerJoin('o.translations', 'translation', 'WITH', 'translation.locale = :locale')
-  
+            ->innerJoin('o.productTaxons', 'productT
