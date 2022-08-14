@@ -30,4 +30,5 @@ trait ProductRepositoryTrait
             ->innerJoin('o.translations', 'translation', 'WITH', 'translation.locale = :locale')
             ->innerJoin('o.productTaxons', 'productTaxon');
 
-        if ($includeAllDesce
+        if ($includeAllDescendants) {
+            $queryBuilder
