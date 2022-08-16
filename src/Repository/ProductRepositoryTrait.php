@@ -32,4 +32,5 @@ trait ProductRepositoryTrait
 
         if ($includeAllDescendants) {
             $queryBuilder
-                ->innerJoin('productTaxon
+                ->innerJoin('productTaxon.taxon', 'taxon')
+                ->andWher
