@@ -35,4 +35,5 @@ trait ProductRepositoryTrait
                 ->innerJoin('productTaxon.taxon', 'taxon')
                 ->andWhere('taxon.left >= :taxonLeft')
                 ->andWhere('taxon.right <= :taxonRight')
-                ->andWhere('taxon.root = :taxon
+                ->andWhere('taxon.root = :taxonRoot')
+                ->setParameter('t
