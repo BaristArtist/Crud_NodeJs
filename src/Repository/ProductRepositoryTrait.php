@@ -34,4 +34,5 @@ trait ProductRepositoryTrait
             $queryBuilder
                 ->innerJoin('productTaxon.taxon', 'taxon')
                 ->andWhere('taxon.left >= :taxonLeft')
-             
+                ->andWhere('taxon.right <= :taxonRight')
+ 
