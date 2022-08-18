@@ -37,4 +37,4 @@ trait ProductRepositoryTrait
                 ->andWhere('taxon.right <= :taxonRight')
                 ->andWhere('taxon.root = :taxonRoot')
                 ->setParameter('taxonLeft', $taxon->getLeft())
-             
+                ->setParameter('taxonRight', $taxon->getRight
