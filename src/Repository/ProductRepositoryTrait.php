@@ -43,4 +43,8 @@ trait ProductRepositoryTrait
         } else {
             $queryBuilder
                 ->andWhere('productTaxon.taxon = :taxon')
-                ->set
+                ->setParameter('taxon', $taxon)
+            ;
+        }
+
+ 
