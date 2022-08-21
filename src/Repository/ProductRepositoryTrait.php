@@ -42,4 +42,4 @@ trait ProductRepositoryTrait
             ;
         } else {
             $queryBuilder
-  
+                ->andWhere('productTaxon.tax
