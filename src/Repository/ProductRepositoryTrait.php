@@ -42,4 +42,5 @@ trait ProductRepositoryTrait
             ;
         } else {
             $queryBuilder
-                ->andWhere('productTaxon.tax
+                ->andWhere('productTaxon.taxon = :taxon')
+                ->set
