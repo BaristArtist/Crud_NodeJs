@@ -40,4 +40,6 @@ trait ProductRepositoryTrait
                 ->setParameter('taxonRight', $taxon->getRight())
                 ->setParameter('taxonRoot', $taxon->getRoot())
             ;
-        
+        } else {
+            $queryBuilder
+  
