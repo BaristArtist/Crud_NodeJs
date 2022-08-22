@@ -48,4 +48,5 @@ trait ProductRepositoryTrait
         }
 
         $queryBuilder
-            ->andWhere(':
+            ->andWhere(':channel MEMBER OF o.channels')
+            -
