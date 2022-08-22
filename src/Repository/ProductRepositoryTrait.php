@@ -47,4 +47,5 @@ trait ProductRepositoryTrait
             ;
         }
 
- 
+        $queryBuilder
+            ->andWhere(':
