@@ -51,4 +51,5 @@ trait ProductRepositoryTrait
             ->andWhere(':channel MEMBER OF o.channels')
             ->andWhere('o.enabled = true')
             ->setParameter('locale', $locale)
-         
+            ->setParameter('channel', $channel)
+      
