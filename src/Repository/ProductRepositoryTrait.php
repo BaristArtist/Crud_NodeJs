@@ -52,4 +52,6 @@ trait ProductRepositoryTrait
             ->andWhere('o.enabled = true')
             ->setParameter('locale', $locale)
             ->setParameter('channel', $channel)
-      
+        ;
+
+        // Grid hack, we do not need to join
