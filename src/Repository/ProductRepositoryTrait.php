@@ -54,4 +54,5 @@ trait ProductRepositoryTrait
             ->setParameter('channel', $channel)
         ;
 
-        // Grid hack, we do not need to join
+        // Grid hack, we do not need to join these if we don't sort by price
+        i
