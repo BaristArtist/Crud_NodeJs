@@ -56,4 +56,5 @@ trait ProductRepositoryTrait
 
         // Grid hack, we do not need to join these if we don't sort by price
         if (isset($sorting['price'])) {
-            $su
+            $subQuery = $this->createQueryBuilder('m')
+        
