@@ -58,4 +58,4 @@ trait ProductRepositoryTrait
         if (isset($sorting['price'])) {
             $subQuery = $this->createQueryBuilder('m')
                 ->select('v.position')
-   
+                ->innerJoin('m.variants', 'v')
