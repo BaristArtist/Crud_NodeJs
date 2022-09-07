@@ -59,3 +59,4 @@ trait ProductRepositoryTrait
             $subQuery = $this->createQueryBuilder('m')
                 ->select('v.position')
                 ->innerJoin('m.variants', 'v')
+                ->andWhere('m.id = :product
