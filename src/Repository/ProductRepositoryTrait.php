@@ -60,4 +60,7 @@ trait ProductRepositoryTrait
                 ->select('v.position')
                 ->innerJoin('m.variants', 'v')
                 ->andWhere('m.id = :product_id')
-                ->orderBy('v.onHand', 
+                ->orderBy('v.onHand', 'DESC')
+            ;
+
+            $queryBuilder
