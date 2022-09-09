@@ -64,3 +64,4 @@ trait ProductRepositoryTrait
             ;
 
             $queryBuilder
+                ->addSelect('variant
