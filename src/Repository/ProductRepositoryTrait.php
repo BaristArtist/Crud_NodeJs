@@ -64,4 +64,6 @@ trait ProductRepositoryTrait
             ;
 
             $queryBuilder
-                ->addSelect('variant
+                ->addSelect('variant')
+                ->addSelect('channelPricing')
+          
