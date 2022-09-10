@@ -66,4 +66,4 @@ trait ProductRepositoryTrait
             $queryBuilder
                 ->addSelect('variant')
                 ->addSelect('channelPricing')
-          
+                ->innerJoin('o.variants', 'variant')
