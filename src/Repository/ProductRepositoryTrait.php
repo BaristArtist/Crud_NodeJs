@@ -67,4 +67,4 @@ trait ProductRepositoryTrait
                 ->addSelect('variant')
                 ->addSelect('channelPricing')
                 ->innerJoin('o.variants', 'variant')
-                ->innerJoin('
+                ->innerJoin('variant.channelPricings', 'channelPric
