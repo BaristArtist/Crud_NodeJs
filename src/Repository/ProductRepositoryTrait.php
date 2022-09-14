@@ -68,4 +68,5 @@ trait ProductRepositoryTrait
                 ->addSelect('channelPricing')
                 ->innerJoin('o.variants', 'variant')
                 ->innerJoin('variant.channelPricings', 'channelPricing')
-                ->andWhere('c
+                ->andWhere('channelPricing.channelCode = :channelCode')
+   
