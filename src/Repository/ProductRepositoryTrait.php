@@ -69,4 +69,5 @@ trait ProductRepositoryTrait
                 ->innerJoin('o.variants', 'variant')
                 ->innerJoin('variant.channelPricings', 'channelPricing')
                 ->andWhere('channelPricing.channelCode = :channelCode')
-                ->andWhere('variant.posi
+                ->andWhere('variant.position = FIRST(' .
+                    str_r
