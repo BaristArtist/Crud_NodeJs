@@ -70,4 +70,4 @@ trait ProductRepositoryTrait
                 ->innerJoin('variant.channelPricings', 'channelPricing')
                 ->andWhere('channelPricing.channelCode = :channelCode')
                 ->andWhere('variant.position = FIRST(' .
-                    str_r
+                    str_replace(':product_id', 'o.id', $subQuery->
