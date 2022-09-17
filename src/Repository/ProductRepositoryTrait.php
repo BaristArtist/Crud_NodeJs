@@ -72,4 +72,4 @@ trait ProductRepositoryTrait
                 ->andWhere('variant.position = FIRST(' .
                     str_replace(':product_id', 'o.id', $subQuery->getDQL()) .
                     ')')
-   
+                ->setParameter('chann
