@@ -73,4 +73,9 @@ trait ProductRepositoryTrait
                     str_replace(':product_id', 'o.id', $subQuery->getDQL()) .
                     ')')
                 ->setParameter('channelCode', $channel->getCode())
-            
+            ;
+        }
+
+        return $queryBuilder;
+    }
+}
