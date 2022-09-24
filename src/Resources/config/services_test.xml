@@ -6,4 +6,4 @@
     <services>
         <defaults public="true" />
 
-        <service id="nedac.sylius_
+        <service id="nedac.sylius_temporarily_out_of_stock_plugin.behat.page.product_ind
