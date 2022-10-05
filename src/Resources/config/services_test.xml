@@ -8,4 +8,5 @@
 
         <service id="nedac.sylius_temporarily_out_of_stock_plugin.behat.page.product_index"
                  class="Tests\Nedac\SyliusTemporarilyOutOfStockPlugin\Behat\Page\Shop\ProductIndexPage"
-                
+                 parent="sylius.behat.symfony_page"
+     
