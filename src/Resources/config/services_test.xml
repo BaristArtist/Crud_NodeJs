@@ -11,4 +11,4 @@
                  parent="sylius.behat.symfony_page"
                  public="false" />
 
-        <s
+        <service id="nedac.sylius_temporarily_ou
