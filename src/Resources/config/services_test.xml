@@ -12,4 +12,4 @@
                  public="false" />
 
         <service id="nedac.sylius_temporarily_out_of_stock_plugin.behat.page.product_show"
-    
+                 class="Tests\Nedac\SyliusTempo
