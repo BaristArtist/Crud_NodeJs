@@ -17,4 +17,4 @@
                  public="false" />
 
         <service id="nedac.sylius_temporarily_out_of_stock_plugin.behat.context.product"
-                 
+                 class="Tests\Nedac\SyliusTemporarilyOutOfStockP
