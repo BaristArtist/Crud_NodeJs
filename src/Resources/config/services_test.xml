@@ -18,4 +18,5 @@
 
         <service id="nedac.sylius_temporarily_out_of_stock_plugin.behat.context.product"
                  class="Tests\Nedac\SyliusTemporarilyOutOfStockPlugin\Behat\Context\Ui\Shop\ProductContext">
-            <argument type="service" id="nedac.sylius_temporarily_out_of_stock_
+            <argument type="service" id="nedac.sylius_temporarily_out_of_stock_plugin.behat.page.product_index" />
+            <argu
