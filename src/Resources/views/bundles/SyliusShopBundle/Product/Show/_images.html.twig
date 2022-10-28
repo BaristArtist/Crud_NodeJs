@@ -1,2 +1,3 @@
 {% if product.imagesByType('main') is not empty %}
-    {% set source_path = product
+    {% set source_path = product.imagesByType('main').first.path %}
+    {% set original_pat
