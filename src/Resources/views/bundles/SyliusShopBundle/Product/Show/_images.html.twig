@@ -1,1 +1,2 @@
-{% if product.imagesByType('main') is 
+{% if product.imagesByType('main') is not empty %}
+    {% set source_path = product
