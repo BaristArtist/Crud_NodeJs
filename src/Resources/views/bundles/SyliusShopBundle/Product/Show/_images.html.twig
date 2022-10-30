@@ -1,4 +1,4 @@
 {% if product.imagesByType('main') is not empty %}
     {% set source_path = product.imagesByType('main').first.path %}
     {% set original_path = source_path|imagine_filter('sylius_shop_product_original') %}
-    {% set
+    {% set path = source_path|imagine_filter(filter|
