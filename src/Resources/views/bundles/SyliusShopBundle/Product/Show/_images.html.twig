@@ -5,4 +5,4 @@
 {% elseif product.images.first %}
     {% set source_path = product.images.first.path %}
     {% set original_path = source_path|imagine_filter('sylius_shop_product_original') %}
-    {% set path = source_
+    {% set path = source_path|imagine_filter(filter|defau
