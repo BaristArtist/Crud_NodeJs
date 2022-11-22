@@ -16,4 +16,6 @@
         {% if not nedac_inventory_is_available(product.variants) %}
             <a class="ui large ribbon label" id="nedac-out-of-stock-ribbon" {{ sylius_test_html_attribute('product-out-of-stock') }}>
                 {{ 'nedac.ui.temporarily_out_of_stock'|trans }}
-     
+            </a>
+        {% endif %}
+        <a 
