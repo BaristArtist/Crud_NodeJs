@@ -26,4 +26,6 @@
 {% if product.images|length > 1 %}
     <div class="ui divider"></div>
 
-    {{ sonata_block_render_event('sylius.shop.product.show.before_thumbnai
+    {{ sonata_block_render_event('sylius.shop.product.show.before_thumbnails', {'product': product}) }}
+
+    <
