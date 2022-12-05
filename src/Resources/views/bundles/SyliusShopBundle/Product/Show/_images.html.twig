@@ -29,4 +29,5 @@
     {{ sonata_block_render_event('sylius.shop.product.show.before_thumbnails', {'product': product}) }}
 
     <div class="ui small images">
-        {% f
+        {% for image in product.images %}
+ 
