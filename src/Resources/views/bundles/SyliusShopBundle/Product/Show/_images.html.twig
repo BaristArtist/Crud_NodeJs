@@ -33,4 +33,6 @@
             {% set path = image.path is not null ? image.path|imagine_filter('sylius_shop_product_small_thumbnail') : '//placehold.it/200x200' %}
             <div class="ui image">
                 {% if product.isConfigurable() and product.variants|length > 0 %}
-                    {% include '@SyliusShop/Product/Show/_imageVariants.ht
+                    {% include '@SyliusShop/Product/Show/_imageVariants.html.twig' %}
+                {% endif %}
+      
