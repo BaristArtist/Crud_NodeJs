@@ -35,4 +35,5 @@
                 {% if product.isConfigurable() and product.variants|length > 0 %}
                     {% include '@SyliusShop/Product/Show/_imageVariants.html.twig' %}
                 {% endif %}
-                <a href="{{ image.path|imagine_filter('sylius_shop_product_original') }}" data-ligh
+                <a href="{{ image.path|imagine_filter('sylius_shop_product_original') }}" data-lightbox="sylius-product-image">
+          
