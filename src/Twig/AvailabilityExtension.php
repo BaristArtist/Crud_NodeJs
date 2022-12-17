@@ -25,3 +25,6 @@ final class AvailabilityExtension extends AbstractExtension
     {
         return [
             new TwigFunction('nedac_inventory_is_available', [$this->availabilityChecker, 'isStockAvailable'])
+        ];
+    }
+}
