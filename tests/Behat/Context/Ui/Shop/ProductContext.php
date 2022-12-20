@@ -42,3 +42,38 @@ final class ProductContext implements Context
      */
     public function iShouldNotSeeTheRibbonWithTextOnTheProductCardOnTheIndexPage(
         string $ribbonText,
+        string $productName
+    ): void {
+        Assert::true($this->indexPage->productCardDoesNotHaveRibbonWithText($productName, $ribbonText));
+    }
+
+    /**
+     * @Then I should see the ribbon with text :ribbonText on the :productName product card on the show page
+     * @param string $ribbonText
+     * @param string $productName
+     */
+    public function iShouldSeeTheRibbonWithTextOnTheProductCardOnTheShowPage(
+        string $ribbonText,
+        string $productName
+    ): void {
+        Assert::true($this->showPage->productCardHasRibbonWithText($productName, $ribbonText));
+    }
+
+    /**
+     * @Then I should see the ribbon with text :ribbonText on the product image
+     * @param string $ribbonText
+     */
+    public function iShouldSeeTheRibbonWithTextOnTheProductImage(string $ribbonText): void
+    {
+        Assert::true($this->showPage->isRibbonDisplayed($ribbonText));
+    }
+
+    /**
+     * @Then I should not see the ribbon with text :ribbonText on the product image
+     * @param string $ribbonText
+     */
+    public function iShouldNotSeeTheRibbonWithTextOnTheProductImage(string $ribbonText): void
+    {
+        Assert::false($this->showPage->isRibbonDisplayed($ribbonText));
+    }
+}
