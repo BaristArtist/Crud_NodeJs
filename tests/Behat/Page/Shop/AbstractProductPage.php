@@ -2,4 +2,6 @@
 
 declare(strict_types=1);
 
-namespace Tests\Nedac\SyliusTemporarilyOutOfStockPlugin\Be
+namespace Tests\Nedac\SyliusTemporarilyOutOfStockPlugin\Behat\Page\Shop;
+
+use FriendsOfBehat\PageObject
