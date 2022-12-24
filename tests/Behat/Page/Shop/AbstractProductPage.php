@@ -8,4 +8,4 @@ use FriendsOfBehat\PageObjectExtension\Page\SymfonyPage;
 
 abstract class AbstractProductPage extends SymfonyPage
 {
-    public
+    public function productCardHasRibbonWithText(string $pro
