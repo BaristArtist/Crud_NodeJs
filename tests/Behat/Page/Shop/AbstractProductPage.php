@@ -8,4 +8,6 @@ use FriendsOfBehat\PageObjectExtension\Page\SymfonyPage;
 
 abstract class AbstractProductPage extends SymfonyPage
 {
-    public function productCardHasRibbonWithText(string $pro
+    public function productCardHasRibbonWithText(string $productName, string $ribbonText): bool
+    {
+   
