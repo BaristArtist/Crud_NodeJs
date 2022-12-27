@@ -10,4 +10,6 @@ abstract class AbstractProductPage extends SymfonyPage
 {
     public function productCardHasRibbonWithText(string $productName, string $ribbonText): bool
     {
-        $ribbonElement = $this->getDocument()->f
+        $ribbonElement = $this->getDocument()->find(
+            'xpath',
+         
