@@ -12,4 +12,5 @@ abstract class AbstractProductPage extends SymfonyPage
     {
         $ribbonElement = $this->getDocument()->find(
             'xpath',
-         
+            sprintf(
+                "descenda
