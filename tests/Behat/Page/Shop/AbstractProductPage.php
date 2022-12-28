@@ -14,4 +14,5 @@ abstract class AbstractProductPage extends SymfonyPage
             'xpath',
             sprintf(
                 "descendant::*[@data-test-product-name = '%s']/" .
-              
+                "ancestor::*[@data-test-product]/" .
+             
