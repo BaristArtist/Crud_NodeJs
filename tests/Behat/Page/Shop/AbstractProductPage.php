@@ -15,4 +15,4 @@ abstract class AbstractProductPage extends SymfonyPage
             sprintf(
                 "descendant::*[@data-test-product-name = '%s']/" .
                 "ancestor::*[@data-test-product]/" .
-             
+                "descendant::*[@data-test-product-out-of-s
