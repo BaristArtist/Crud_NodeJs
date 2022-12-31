@@ -18,4 +18,6 @@ abstract class AbstractProductPage extends SymfonyPage
                 "descendant::*[@data-test-product-out-of-stock]",
                 $productName
             )
-     
+        );
+
+        return null !== $ribbonElement &
