@@ -23,4 +23,4 @@ abstract class AbstractProductPage extends SymfonyPage
         return null !== $ribbonElement && $ribbonElement->getText() === $ribbonText;
     }
 
-    public functio
+    public function productCardDoesNotHaveRibbonWithText(string $pr
