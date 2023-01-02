@@ -20,4 +20,7 @@ abstract class AbstractProductPage extends SymfonyPage
             )
         );
 
-        return null !== $ribbonElement && $ribbonElement->getText() === $
+        return null !== $ribbonElement && $ribbonElement->getText() === $ribbonText;
+    }
+
+    public functio
