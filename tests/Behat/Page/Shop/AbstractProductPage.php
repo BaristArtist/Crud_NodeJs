@@ -25,4 +25,6 @@ abstract class AbstractProductPage extends SymfonyPage
 
     public function productCardDoesNotHaveRibbonWithText(string $productName, string $ribbonText): bool
     {
-        return ! $this->productCardHasRibbonWi
+        return ! $this->productCardHasRibbonWithText($productName, $ribbonText);
+    }
+}
