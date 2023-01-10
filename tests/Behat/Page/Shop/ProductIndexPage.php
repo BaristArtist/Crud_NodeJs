@@ -6,4 +6,6 @@ namespace Tests\Nedac\SyliusTemporarilyOutOfStockPlugin\Behat\Page\Shop;
 
 final class ProductIndexPage extends AbstractProductPage implements ProductIndexPageInterface
 {
-    public function get
+    public function getRouteName(): string
+    {
+        re
