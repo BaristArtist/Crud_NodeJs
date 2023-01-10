@@ -4,4 +4,6 @@ declare(strict_types=1);
 
 namespace Tests\Nedac\SyliusTemporarilyOutOfStockPlugin\Behat\Page\Shop;
 
-final class ProductIndexPage extends AbstractProductPage implements ProductIndexPag
+final class ProductIndexPage extends AbstractProductPage implements ProductIndexPageInterface
+{
+    public function get
