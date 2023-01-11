@@ -8,4 +8,6 @@ final class ProductIndexPage extends AbstractProductPage implements ProductIndex
 {
     public function getRouteName(): string
     {
-        re
+        return 'sylius_shop_product_index';
+    }
+}
