@@ -6,4 +6,6 @@ namespace Tests\Nedac\SyliusTemporarilyOutOfStockPlugin\Behat\Page\Shop;
 
 final class ProductShowPage extends AbstractProductPage implements ProductShowPageInterface
 {
-    public function isRibbon
+    public function isRibbonDisplayed(string $ribbonText): bool
+    {
+ 
