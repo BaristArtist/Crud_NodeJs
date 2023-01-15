@@ -4,4 +4,6 @@ declare(strict_types=1);
 
 namespace Tests\Nedac\SyliusTemporarilyOutOfStockPlugin\Behat\Page\Shop;
 
-final class ProductShowPage extends AbstractProductPage implements ProductS
+final class ProductShowPage extends AbstractProductPage implements ProductShowPageInterface
+{
+    public function isRibbon
