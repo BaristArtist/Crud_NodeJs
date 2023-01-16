@@ -8,4 +8,4 @@ final class ProductShowPage extends AbstractProductPage implements ProductShowPa
 {
     public function isRibbonDisplayed(string $ribbonText): bool
     {
- 
+        $ribbonElement = $this->getDocume
