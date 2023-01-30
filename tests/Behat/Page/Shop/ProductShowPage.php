@@ -11,4 +11,7 @@ final class ProductShowPage extends AbstractProductPage implements ProductShowPa
         $ribbonElement = $this->getDocument()->find(
             'xpath',
             "descendant::*[@data-product-image]/" .
-            "descendant::*[@data-test-product-out-o
+            "descendant::*[@data-test-product-out-of-stock]"
+        );
+
+        return null 
