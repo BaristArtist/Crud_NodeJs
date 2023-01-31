@@ -17,4 +17,6 @@ final class ProductShowPage extends AbstractProductPage implements ProductShowPa
         return null !== $ribbonElement && $ribbonElement->getText() === $ribbonText;
     }
 
-    pu
+    public function getRouteName(): string
+    {
+        re
