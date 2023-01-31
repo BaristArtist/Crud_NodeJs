@@ -14,4 +14,7 @@ final class ProductShowPage extends AbstractProductPage implements ProductShowPa
             "descendant::*[@data-test-product-out-of-stock]"
         );
 
-        return null !== $ribbonElement && $ribbonElement->getTe
+        return null !== $ribbonElement && $ribbonElement->getText() === $ribbonText;
+    }
+
+    pu
