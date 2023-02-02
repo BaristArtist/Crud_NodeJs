@@ -19,4 +19,6 @@ final class ProductShowPage extends AbstractProductPage implements ProductShowPa
 
     public function getRouteName(): string
     {
-        re
+        return 'sylius_shop_product_show';
+    }
+}
