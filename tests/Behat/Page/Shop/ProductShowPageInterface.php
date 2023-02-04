@@ -2,4 +2,4 @@
 
 declare(strict_types=1);
 
-namespace Tests\Nedac\
+namespace Tests\Nedac\SyliusTemporarilyOutOfStockPlugin\Behat\Pag
