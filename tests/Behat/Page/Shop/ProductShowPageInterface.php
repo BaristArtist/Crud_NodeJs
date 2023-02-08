@@ -6,4 +6,4 @@ namespace Tests\Nedac\SyliusTemporarilyOutOfStockPlugin\Behat\Page\Shop;
 
 interface ProductShowPageInterface extends ProductIndexPageInterface
 {
-    public func
+    public function isRibbonDisplayed(string $ribbonText):
