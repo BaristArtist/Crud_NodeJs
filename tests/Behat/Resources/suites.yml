@@ -4,4 +4,4 @@ default:
     suites:
         default:
             contexts:
-                - syliu
+                - sylius.behat.context.hook.doctrine_or
