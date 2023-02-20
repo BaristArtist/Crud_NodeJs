@@ -7,4 +7,5 @@ default:
                 - sylius.behat.context.hook.doctrine_orm
 
                 - sylius.behat.context.transform.country
-                - sylius.behat.co
+                - sylius.behat.context.transform.product
+                - sylius.
