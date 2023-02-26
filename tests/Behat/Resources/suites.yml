@@ -10,4 +10,5 @@ default:
                 - sylius.behat.context.transform.product
                 - sylius.behat.context.transform.taxon
                 - sylius.behat.context.transform.theme
-                - sylius.behat.context.transform.lex
+                - sylius.behat.context.transform.lexical
+                - sylius.behat.context.tr
