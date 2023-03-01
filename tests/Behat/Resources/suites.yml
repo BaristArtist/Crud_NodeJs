@@ -14,4 +14,4 @@ default:
                 - sylius.behat.context.transform.shared_storage
 
                 - sylius.behat.context.setup.currency
-             
+                - sylius.behat.context.setup.geographi
