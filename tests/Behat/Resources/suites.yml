@@ -16,4 +16,5 @@ default:
                 - sylius.behat.context.setup.currency
                 - sylius.behat.context.setup.geographical
                 - sylius.behat.context.setup.channel
-                - sylius.behat.conte
+                - sylius.behat.context.setup.product
+                -
