@@ -19,4 +19,6 @@ default:
                 - sylius.behat.context.setup.product
                 - sylius.behat.context.setup.taxonomy
                 - sylius.behat.context.setup.product_taxon
-                - sylius.behat.context
+                - sylius.behat.context.ui.shop.product
+
+                - nedac.sylius_t
