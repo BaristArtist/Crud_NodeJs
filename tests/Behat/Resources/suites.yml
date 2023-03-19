@@ -23,4 +23,6 @@ default:
 
                 - nedac.sylius_temporarily_out_of_stock_plugin.behat.context.product
             filters:
-                tags
+                tags: "@temporarily_out_of_stock"
+        theme_setup:
+ 
