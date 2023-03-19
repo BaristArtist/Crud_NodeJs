@@ -21,4 +21,6 @@ default:
                 - sylius.behat.context.setup.product_taxon
                 - sylius.behat.context.ui.shop.product
 
-                - nedac.sylius_temporarily_out_of_stock_plugin.behat.contex
+                - nedac.sylius_temporarily_out_of_stock_plugin.behat.context.product
+            filters:
+                tags
