@@ -26,4 +26,6 @@ default:
                 tags: "@temporarily_out_of_stock"
         theme_setup:
             contexts:
-                - sylius.behat.
+                - sylius.behat.context.hook.doctrine_orm
+
+                - syl
