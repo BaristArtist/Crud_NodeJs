@@ -28,4 +28,5 @@ default:
             contexts:
                 - sylius.behat.context.hook.doctrine_orm
 
-                - syl
+                - sylius.behat.context.transform.country
+                - sylius.
