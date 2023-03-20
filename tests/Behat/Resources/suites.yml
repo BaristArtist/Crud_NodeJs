@@ -25,4 +25,5 @@ default:
             filters:
                 tags: "@temporarily_out_of_stock"
         theme_setup:
- 
+            contexts:
+                - sylius.behat.
