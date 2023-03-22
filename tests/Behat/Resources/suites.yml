@@ -33,4 +33,5 @@ default:
                 - sylius.behat.context.transform.product
                 - sylius.behat.context.transform.taxon
                 - sylius.behat.context.transform.theme
-                - sylius.beh
+                - sylius.behat.context.transform.lexical
+                - 
