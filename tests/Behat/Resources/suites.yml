@@ -34,4 +34,6 @@ default:
                 - sylius.behat.context.transform.taxon
                 - sylius.behat.context.transform.theme
                 - sylius.behat.context.transform.lexical
-                - sylius.behat.context.transform.shared_stora
+                - sylius.behat.context.transform.shared_storage
+
+                - sylius.behat.context.setup.cur
