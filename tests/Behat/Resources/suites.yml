@@ -32,4 +32,4 @@ default:
                 - sylius.behat.context.transform.channel
                 - sylius.behat.context.transform.product
                 - sylius.behat.context.transform.taxon
-     
+                - sylius.behat.cont
