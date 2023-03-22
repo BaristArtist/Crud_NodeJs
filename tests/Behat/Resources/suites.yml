@@ -36,4 +36,5 @@ default:
                 - sylius.behat.context.transform.lexical
                 - sylius.behat.context.transform.shared_storage
 
-                - sylius.behat.context.setup.cur
+                - sylius.behat.context.setup.currency
+                - sylius.behat.context.setup
