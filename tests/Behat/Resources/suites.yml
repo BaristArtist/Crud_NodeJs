@@ -50,4 +50,6 @@ default:
                 - sylius.behat.context.transform.product
                 - sylius.behat.context.transform.taxon
 
-                - sylius.behat.context.ui.shop.pro
+                - sylius.behat.context.ui.shop.product
+
+                - nedac.sylius_temporari
