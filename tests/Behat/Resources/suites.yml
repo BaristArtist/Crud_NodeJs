@@ -44,4 +44,6 @@ default:
                 - sylius.behat.context.setup.theme
                 - sylius.behat.context.setup.product_taxon
             filters:
-                tags
+                tags: "@theme_setup"
+        theme:
+     
