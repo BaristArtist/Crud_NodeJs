@@ -43,4 +43,5 @@ default:
                 - sylius.behat.context.setup.taxonomy
                 - sylius.behat.context.setup.theme
                 - sylius.behat.context.setup.product_taxon
-       
+            filters:
+                tags
