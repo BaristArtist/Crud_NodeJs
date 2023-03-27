@@ -47,4 +47,5 @@ default:
                 tags: "@theme_setup"
         theme:
             contexts:
-                - syli
+                - sylius.behat.context.transform.product
+             
