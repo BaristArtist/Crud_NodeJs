@@ -48,4 +48,6 @@ default:
         theme:
             contexts:
                 - sylius.behat.context.transform.product
-             
+                - sylius.behat.context.transform.taxon
+
+       
