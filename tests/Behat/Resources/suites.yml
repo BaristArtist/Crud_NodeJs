@@ -52,4 +52,5 @@ default:
 
                 - sylius.behat.context.ui.shop.product
 
-                - nedac.sylius_temporari
+                - nedac.sylius_temporarily_out_of_stock_plugin.behat.context.product
+            fi
